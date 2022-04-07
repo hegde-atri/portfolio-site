@@ -1,1 +1,1 @@
-# hegdeatri-dot-com
+# hegdeatri-dot-com [![wakatime](https://wakatime.com/badge/user/ee5b4fd5-a7ea-4b3c-b25e-710e5842ef79/project/8b6ce278-0c37-4364-9fa9-3c3eb651e56e.svg?style=flat-square)](https://wakatime.com/badge/user/ee5b4fd5-a7ea-4b3c-b25e-710e5842ef79/project/8b6ce278-0c37-4364-9fa9-3c3eb651e56e)

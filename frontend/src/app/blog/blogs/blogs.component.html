@@ -1,0 +1,37 @@
+<div style="width: 80%; margin: auto;">
+  <!-- columns selector -->
+  <div>
+
+  </div>
+  <!-- blog list -->
+  <div>
+    <mat-card class="blog-card">
+      <!-- <mat-form-field>
+        <input matInput type="text" (keyup)="filter(filterText)" (ngModel)="filterText" placeholder="Filter">
+      </mat-form-field> -->
+      <br>
+      <table mat-table class="full-width-table" [dataSource]="tableSource" matSort>
+        <ng-container matColumnDef="title">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> title </th>
+          <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+        </ng-container>
+        <ng-container matColumnDef="createdDate">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> createdDate </th>
+          <td mat-cell *matCellDef="let element"> {{element.createdDate}} </td>
+        </ng-container>
+        <ng-container matColumnDef="author">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> author </th>
+          <td mat-cell *matCellDef="let element"> {{element.author}} </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20, 50, 100]"></mat-paginator>
+
+    </mat-card>    
+  </div>
+  <!-- next / previous -->
+  <div>
+
+  </div>
+</div>

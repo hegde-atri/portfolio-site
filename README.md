@@ -1,3 +1,3 @@
 # hegdeatri-dot-com
 
-Currently experimenting with different ways to host my website, and find the right framework.
+My website built using zola visit it [here](https://hegdeatri.com).

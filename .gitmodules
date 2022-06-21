@@ -1,4 +1,0 @@
-[submodule "zola/themes/blow"]
-	path = zola/themes/blow
-	url = git@github.com:tchartron/blow.git
-	branch = main

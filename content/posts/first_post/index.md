@@ -11,6 +11,10 @@ I finally got around to writing a static page website using zola. I can now save
 just have tips and tricks that will be of help to other people. Right now I'm learning the rust 🦀 programming language and working 
 on my arch install and arch config scripts.
 
+Things to update in the site:
+- detect preferred theme from browser.
+- dark theme doesn't invert pictures (when theme="dark" when webpage loaded)
+
 Some of the things I plan to do over summer: 
 - start a hobby youtube channel.
 - learn emacs or vim.

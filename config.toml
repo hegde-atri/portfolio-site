@@ -173,7 +173,7 @@ navbar_items = [
     { code = "en", nav_items = [
         { url = "$BASE_URL/", name = "Home" },
         { url = "$BASE_URL/posts", name = "Posts" },
-        { url = "$BASE_URL/docs", name = "Docs" },
+        { url = "$BASE_URL/projects", name = "Projects" },
         { url = "$BASE_URL/tags", name = "Tags" },
         { url = "$BASE_URL/categories", name = "Categories" },
         { url = "$BASE_URL/about", name = "About" },
@@ -189,7 +189,7 @@ webmanifest = "/icons/site.webmanifest"
 
 [extra.author]
 name = "Atri Hegde"
-avatar = "images/avatar.jpg"
+avatar = "/images/avatar.jpg"
 
 [extra.social]
 #facebook = ""

@@ -2,6 +2,10 @@
 title = "File Organizer"
 description = "How to use my File Organizer application"
 date=2022-06-21
+[taxonomies]
+tags = ["File management"] 
+[extra]
+toc = true
 +++
 
 # [File Organizer](https://github.com/hegde-atri/FileOrganizer)

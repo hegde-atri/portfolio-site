@@ -1,6 +1,6 @@
 +++
 title = "Atri Hegde"
-description = "Watch, stand fast in faith, be brave, be strong."
+description = "\"Watch, stand fast in faith, be brave, be strong.\""
 +++
 
 <br>

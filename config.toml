@@ -193,6 +193,7 @@ avatar = "/images/avatar.jpg"
 
 [extra.social]
 #facebook = ""
+leetcode="hegde_atri"
 github = "hegde-atri"
 gitlab = "hegde-atri"
 #keybase = ""
@@ -211,5 +212,5 @@ email = "atri@hegdeatri.com"
 #disqus = ""
 
 [extra.mapbox]
-#enabled = true
-#access_token = ""
+enabled = true
+access_token = "pk.eyJ1IjoicmF0YW5zaHJlc2h0aGEiLCJhIjoiY2tla2s2NmM3MDd0ZzJzbXFtc3Y2YmU0NyJ9.0RhUnJPKbxHWw3xGPnnBlA"

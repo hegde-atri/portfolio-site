@@ -2,6 +2,9 @@
 title = "Linux config script"
 description = "Guide to managing dotfiles using my script"
 date=2022-06-21
+[taxonomies]
+categories = ["Linux"] 
+tags = ["Arch Linux"]
 +++
 
 # [My dotfiles script](https://github.com/hegde-atri/.dotfiles)

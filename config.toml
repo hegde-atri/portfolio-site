@@ -162,12 +162,12 @@ include_content = true
 # author value will be available using {{ config.extra.author }} in templates
 #
 [extra]
-katex.enabled = true
-katex.auto_render = true
+katex.enabled = false
+katex.auto_render = false
 
-chart.enabled = true
-mermaid.enabled = true
-galleria.enabled = true
+chart.enabled = false
+mermaid.enabled = false
+galleria.enabled = false
 
 navbar_items = [
     { code = "en", nav_items = [
@@ -194,6 +194,7 @@ avatar = "/images/avatar.jpg"
 [extra.social]
 #facebook = ""
 leetcode="hegde_atri"
+youtube = "UCHZwj1GpsDQ3B9S5VjeY36A"
 github = "hegde-atri"
 gitlab = "hegde-atri"
 #keybase = ""
@@ -212,5 +213,5 @@ email = "atri@hegdeatri.com"
 #disqus = ""
 
 [extra.mapbox]
-enabled = true
-access_token = "pk.eyJ1IjoicmF0YW5zaHJlc2h0aGEiLCJhIjoiY2tla2s2NmM3MDd0ZzJzbXFtc3Y2YmU0NyJ9.0RhUnJPKbxHWw3xGPnnBlA"
+enabled = false
+#access_token = "pk.eyJ1IjoicmF0YW5zaHJlc2h0aGEiLCJhIjoiY2tla2s2NmM3MDd0ZzJzbXFtc3Y2YmU0NyJ9.0RhUnJPKbxHWw3xGPnnBlA"

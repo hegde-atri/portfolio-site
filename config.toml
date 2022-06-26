@@ -180,6 +180,8 @@ navbar_items = [
     ] },
 ]
 
+colorscheme = "light"
+
 [extra.favicon]
 favicon_16x16 = "/icons/favicon-16x16.png"
 favicon_32x32 = "/icons/favicon-32x32.png"

@@ -35,6 +35,24 @@ Navigate through this page/guide using the table of contents on the right.
 
 ## Advanced
 
+## Theming
+
+- Use the `lxappearance` package to manage gtk themes. You might want to install `arc-gtk-theme`.
+- Use the `qt5ct` package to manage qt themes.You need to add `QT_QPA_PLATFORMTHEME=qt5ct` to `/etc/environment` and re-login/reboot. You might want to install `breeze`.
+
+## Changing keyboard layout
+
+To change your keyboard layout in Xorg, you will need to modify/create `/etc/X11/xorg.conf.d/00-keyboard.conf`.
+Here is an example for switching to the UK layout.
+```conf
+Section "InputClass"
+        Identifier "system-keyboard"
+        Option "XkbLayout" "gb"
+        Option "XkbModel" "pc104"
+EndSection
+```
+
+
 ### Services
 A service is a program that runs in the background
 

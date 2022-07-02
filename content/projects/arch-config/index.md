@@ -25,6 +25,7 @@ Clone me: `git clone https://github.com/hegde-atri/.dotfiles ~/.source/dotfiles`
 
 - First run the firstrun.sh script `./firstrun.sh`. This installs any required fonts and packages.
 - Then you can run the setup.sh script `./setup.sh`. You can exit the script at any time using `Ctrl-C`
+- Make sure that you have a `~/.dotfiles` directory or else it will fail.
 
 To have this as a command from your shell, add an alias to your `.bashrc` file. (Example - `alias config-dots='/path/to/setup'`).
 If you have cloned the repo using the command above, then you can just

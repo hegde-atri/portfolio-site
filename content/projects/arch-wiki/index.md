@@ -27,9 +27,55 @@ Navigate through this page/guide using the table of contents on the right.
 
 # Configuration
 
+## Network Manager
+
+If you are using an ethernet connection, you should just be connected to the internet. If not refer to the arch wiki.
+
+For connecting to a wifi networking using Network Manager.
+
+```sh
+sudo nmcli radio wifi on #turns wifi on.
+sudo nmcli dev wifi list #list networks.
+sudo nmcli dev wifi connect <network-ssid> --ask
+```
+
+
+
+You can check if your internet connection works by using ping - `ping gnu.org` and viewing active connections by using
+`nmcli con show`.
+
 ## AUR helper
 
-## NetworkManager
+Paru is my AUR helper of choice, written in rust and constantly updated. Check out the paru repository on [github](https://github.com/morganamilo/paru).
+
+```sh
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+```
+
+I would also change some options so it is actually usuable.
+
+- `sudo vim /etc/pacman.conf` - Uncommenting `Color` and `ParallelDownloads = 5` and changing it to `ParallelDownloads = 15`.
+- `sudo vim /etc/paru.conf` - Uncommenting `BottomUp`.
+
+## Auto-mounting drives on boot
+
+First lets open the terminal and type `lsblk -f`. This will list all the disks & partitions connected along with their UUID.
+Select your disk of choice and copy the UUID from the terminal by using `LCtrl + LShift + c`. Also make note of the partition
+and open `sudo vim /etc/fstab`.
+
+```sh
+... # <-- These are already present drives. If the file is empty, you have not installed arch properly!
+# /dev/sdb1 -> replace sdb1 with your partition name
+UUID=<paste your UUID here>     /mnt/hdd ntfs defaults 0 2
+#    ^ paste using Ctrl+Shift+v  ^this must be an empty directory
+# replace ntfs with your drive's format. and leave the rest the same
+
+```
+Check whether your fstab file is valid by using `sudo mount --fake -a` and then `sudo mount -a` if there are no errors.
+
 
 ## Bluetooth
 
@@ -40,10 +86,11 @@ Navigate through this page/guide using the table of contents on the right.
 - Use the `lxappearance` package to manage gtk themes. You might want to install `arc-gtk-theme`.
 - Use the `qt5ct` package to manage qt themes.You need to add `QT_QPA_PLATFORMTHEME=qt5ct` to `/etc/environment` and re-login/reboot. You might want to install `breeze`.
 
-## Changing keyboard layout
+## Changing keyboard layout and mouse acceleration
 
-To change your keyboard layout in Xorg, you will need to modify/create `/etc/X11/xorg.conf.d/00-keyboard.conf`.
-Here is an example for switching to the UK layout.
+You'll need to create this section to the given file. Replace `gb` with your layout.
+
+`sudo vim /etc/X11/xorg.conf.d/00-keyboard.conf`
 ```conf
 Section "InputClass"
         Identifier "system-keyboard"
@@ -52,17 +99,31 @@ Section "InputClass"
 EndSection
 ```
 
+Mouse acceleration can be disabled by the following config.
 
-### Services
+`sudo vim /etc/X11/xorg.conf.d/50-mouse-acceleration.conf`
+
+```conf
+Section "InputClass"
+	Identifier "My Mouse"
+	Driver "libinput"
+	MatchIsPointer "yes"
+	Option "AccelProfile" "flat"
+	Option "AccelSpeed" "0"
+EndSection
+```
+
+
+## Services
 A service is a program that runs in the background
 
-#### Some commands
+### Some commands
 - `sudo systemctl start <service_name>`: to start a service
 - `sudo systemctl enable --now <service_name>`: starts the service but also makes sure it is running when you turn your computer on / log in. If you don't need the service to run/start right now, you can omit the `--now` flag.
 - `sudo systemctl stop <service_name>`: to stop a running service.
 - `sudo systemctl disable <service_name>:` Stop a service from running on startup.
 
-#### Some commands that are useful for debegging:
+### Some commands that are useful for debegging:
 - `sudo systemctl | grep running` : see all the services that are running.
 - `sudo systemctl list-unit-files | grep enabled`: see the enabled services
 
@@ -82,14 +143,17 @@ wmname LG3D
 ```
 
 ## Running windows applications
+
 ### Microsoft and Adobe apps
+
 I use winapps to run Microsoft Office, Visual studio and Adobe creative cloud apps.
 For this refer to the [winapps repository](https://github.com/Fmstrat/winapps). 
 
 ### Running Standalone 'exe' files
+
 For running any small applications, I use bottles which is available in flathub [here](https://flathub.org/apps/details/com.usebottles.bottles).
 
-# Terminal and bash scripting
+## Terminal and bash scripting
 
 ## Commands
 

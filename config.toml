@@ -192,6 +192,7 @@ webmanifest = "/icons/site.webmanifest"
 [extra.author]
 name = "Atri Hegde"
 avatar = "/images/avatar.jpg"
+logo = "/images/test-logo.png"
 
 [extra.social]
 #facebook = ""

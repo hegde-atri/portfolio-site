@@ -81,6 +81,8 @@ Check whether your fstab file is valid by using `sudo mount --fake -a` and then 
 
 ## Advanced
 
+- If you want to change your kernel refer to this [guide
+
 ## Theming
 
 - Use the `lxappearance` package to manage gtk themes. You might want to install `arc-gtk-theme`.

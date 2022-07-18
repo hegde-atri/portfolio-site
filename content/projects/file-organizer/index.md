@@ -9,7 +9,7 @@ tags = ["C#", "File Handling"]
 toc = true
 +++
 
-# [File Organizer](https://github.com/hegde-atri/FileOrganizer)
+# File Organizer [(GitHub)](https://github.com/hegde-atri/FileOrganizer)
 
 A C# application written using the Avalonia framework. It was made when I had recovered over 2TB of data from a hard drive all into one folder.
 

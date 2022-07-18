@@ -9,7 +9,7 @@ categories = ["Java"]
 tags = ["Java"]
 +++
 
-# [Meeting Booker](https://github.com/hegde-atri/meetingBooking)
+# Meeting Booker [(GitHub)](https://github.com/hegde-atri/meetingBooking)
 
 - Cleaner's and caterer's dashboard can be viewed from the admin panel
 - Only Admin's can create new Admin accounts.

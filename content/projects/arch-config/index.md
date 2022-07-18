@@ -9,7 +9,7 @@ categories = ["Linux"]
 tags = ["Arch Linux"]
 +++
 
-# [My dotfiles script](https://github.com/hegde-atri/.dotfiles)
+# My dotfiles script [(GitHub)](https://github.com/hegde-atri/.dotfiles)
 
 After starting make multiple configs for multiple use cases, computers/VM's
 I've decided to make myself a script that allows me to switch between my configs,

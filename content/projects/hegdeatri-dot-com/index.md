@@ -7,7 +7,7 @@ categories = ["Website"]
 tags = ["Zola"]
 +++
 
-# [Personal website](https://hegdeatri.com)
+# Personal website [(GitHub)](https://hegdeatri.com)
 
 After a trying out a bunch different frameworks including - yew, blazor, angular and gatsby, I have decided 
 to use zola for my website. Reasons being:

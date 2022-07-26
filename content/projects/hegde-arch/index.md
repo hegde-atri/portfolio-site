@@ -7,10 +7,10 @@ categories = ["Linux"]
 tags = ["Linux"]
 +++
 
-# hegde-arch
+# hegde-arch [(Github)](https://github.com/hegde-atri/hegde-arch)
 
 I have had enough hopping between different configs, colour-schemes, window managers and applications. Soon I will be starting university and will not have
-enought time to do any of the things I used to do, and have time to experiment with different software. I think I have gotten pretty comfortable
+enough time to do any of the things I used to do, and have time to experiment with different software. I think I have gotten pretty comfortable
 using some of the software that I am using currently and therefore decided to start a repository for basically having everything I need.
 
 The deadline I have set for this is December 2022. It will be aesthetically pleasing (highly subjective) and have all the features I need to make my life easier.
@@ -23,7 +23,7 @@ It will by no means be an iso. It will just a git repo that you can clone and us
 - sxhkd
 - polybar
 - rofi
-- eww
+- eww (replacing polybar)
 
 ## Usage
 

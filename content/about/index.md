@@ -8,8 +8,7 @@ toc = true
 
 # About me
 
-I am Atri Hegde, a student at Reigate College studying Physics, Mathematics, Chemistry and Computer Science for my
-A-levels.
+I am Atri Hegde, a student at the University of Sheffield studying MEng Software Engineering.
 
 I like to mess around with computer systems in my free time, configuring servers or writing applications.
 

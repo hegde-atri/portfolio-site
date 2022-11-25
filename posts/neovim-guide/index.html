@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  <link href='&#x2F;icons&#x2F;site.webmanifest' rel="manifest" />
+  
+  
+  <link color="#5bbad5" href='&#x2F;icons&#x2F;safari-pinned-tab.svg' rel="mask-icon" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-16x16.png' rel="icon" sizes="16x16" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-32x32.png' rel="icon" sizes="32x32" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;apple-touch-icon.png' rel="apple-touch-icon" sizes="180x180" />
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" integrity="sha256-rTpdO0HXBCNpreAHcu6tB2Ppg515Vo+5GtYSsnNLz+8=" crossorigin="anonymous">
+  <link href="https://hegdeatri.com/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Atri Hegde | A neovim guide
+
+  </title>
+
+  
+  
+  
+
+  
+</head>
+
+<body class="has-background-white" theme="light">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;hegdeatri.com">
+          <img src="&#x2F;images&#x2F;test-logo.png" alt="" style="max-height: 2.5rem !important; margin: 0.25rem;">
+
+          Atri Hegde</a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;">
+            Home
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;posts">
+            Posts
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;projects">
+            Projects
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;tags">
+            Tags
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;categories">
+            Categories
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;about">
+            About
+          </a>
+          
+          
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            A neovim guide
+          </h1>
+          <p class="subtitle">Helping you get started with neovim</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Atri Hegde published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2022-06-28">June 28, 2022</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>3 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>513 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+              
+<p>
+  Categories:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/categories/post/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>Post</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/categories/guide/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>Guide</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+              
+<p>
+  Tags:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/tags/neovim/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>Neovim</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <h1 id="a-neovim-guide">A neovim guide</h1>
+<p>This is a guide to get you started using neovim, replacing your IDE. We are gonna be installing neovim on a linux machine,
+installing plugins and customizing it to our preference.</p>
+<p>I am still learning vim, but soon there will be a guide to make vim replace your IDE.</p>
+<h2 id="configuration-file">Configuration file</h2>
+<p>I used to use vim, without any plugins before this and am accustomed to typing <code>vim</code> in the terminal, so I set myself an alias in my bashrc file.</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">...
+</span><span style="color:#5ebfcc;">alias </span><span style="color:#5cb3fa;">vim</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">&#39;nvim&#39;
+</span><span style="color:#eb6772;">...
+</span></code></pre>
+<p>The configuration file for neovim is located at <code>~/.config/nvim/init.vim</code>. First let us configure some basic options for neovim.
+I am going to createe the directory and open <code>init.vim</code>.</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">mkdir -p ~</span><span style="color:#abb2bf;">/.config/nvim
+</span><span style="color:#eb6772;">vim ~</span><span style="color:#abb2bf;">/.config/nvim/init.vim
+</span></code></pre>
+<p>My configuration so far: </p>
+<pre data-lang="vim" style="background-color:#2b303b;color:#6c7079;" class="language-vim "><code class="language-vim" data-lang="vim"><span style="color:#abb2bf;">call </span><span style="color:#5cb3fa;">plug#begin</span><span style="color:#abb2bf;">()
+</span><span style="font-style:italic;color:#5f697a;">    &quot; Appearance
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;vim-airline/vim-airline&#39;
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;ryanoasis/vim-devicons&#39;
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;folke/tokyonight.nvim&#39;</span><span style="color:#abb2bf;">, { </span><span style="color:#9acc76;">&#39;branch&#39;</span><span style="color:#abb2bf;">: </span><span style="color:#9acc76;">&#39;main&#39;</span><span style="color:#abb2bf;"> }
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;vim-airline/vim-airline-themes&#39;
+</span><span style="color:#abb2bf;">
+</span><span style="font-style:italic;color:#5f697a;">    &quot; Utilities
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;sheerun/vim-polyglot&#39;
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;jiangmiao/auto-pairs&#39;
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;ap/vim-css-color&#39;
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;preservim/nerdtree&#39;
+</span><span style="color:#abb2bf;">
+</span><span style="font-style:italic;color:#5f697a;">    &quot; Completion / linters / formatters
+</span><span style="font-style:italic;color:#5f697a;">    &quot; Plug &#39;neoclide/coc.nvim&#39;,  {&#39;branch&#39;: &#39;master&#39;, &#39;do&#39;: &#39;yarn install&#39;}
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;plasticboy/vim-markdown&#39;
+</span><span style="color:#abb2bf;">
+</span><span style="font-style:italic;color:#5f697a;">    &quot; Git
+</span><span style="color:#abb2bf;">    Plug </span><span style="color:#9acc76;">&#39;airblade/vim-gitgutter&#39;
+</span><span style="color:#abb2bf;">call </span><span style="color:#5cb3fa;">plug#end</span><span style="color:#abb2bf;">() 
+</span></code></pre>
+<p>These are the plugins I use</p>
+<ul>
+<li><code>vim-airline</code> - for the status bars</li>
+<li><code>vim-devicons</code> - provides icons</li>
+<li><code>tokyonight.vim</code> &amp; <code>vim-airline-themes</code> - themes</li>
+<li><code>vim-polygot</code> - language pack for vim</li>
+<li><code>auto-pairs</code> - automatically pairs syntax</li>
+<li><code>vim-css-color</code> - hex values have colour background</li>
+<li><code>nerdtree</code> - tree style file explorer</li>
+<li><code>vim-markdown</code> - markdown related features</li>
+<li><code>vim-gitgutter</code> - git gutter</li>
+</ul>
+<pre data-lang="vim" style="background-color:#2b303b;color:#6c7079;" class="language-vim "><code class="language-vim" data-lang="vim"><span style="font-style:italic;color:#5f697a;">&quot; Options
+</span><span style="font-style:italic;color:#5f697a;">&quot; set background=dark
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> clipboard=unnamedplus
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> completeopt=noinsert,menuone,noselect
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> cursorline
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> hidden
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> inccommand=split
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> mouse=</span><span style="color:#5ebfcc;">a
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> number
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> relativenumber
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> splitbelow splitright
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> title
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> ttimeoutlen=</span><span style="color:#db9d63;">0
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> wildmenu
+</span><span style="color:#abb2bf;">
+</span><span style="font-style:italic;color:#5f697a;">&quot; Tabs size
+</span><span style="color:#5ebfcc;">set expandtab
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> shiftwidth=</span><span style="color:#db9d63;">2
+</span><span style="color:#5ebfcc;">set</span><span style="color:#abb2bf;"> tabstop=</span><span style="color:#db9d63;">2
+</span><span style="color:#abb2bf;">
+</span><span style="color:#5ebfcc;">filetype</span><span style="color:#abb2bf;"> plugin indent on
+</span><span style="color:#abb2bf;">syntax on
+</span><span style="color:#abb2bf;">
+</span><span style="font-style:italic;color:#5f697a;">&quot; Italics
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">&amp;t_ZH</span><span style="color:#abb2bf;">=</span><span style="color:#9acc76;">&quot;\e[3m&quot;
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">&amp;t_ZR</span><span style="color:#abb2bf;">=</span><span style="color:#9acc76;">&quot;\e[23m&quot;
+</span></code></pre>
+<ul>
+<li><code>completeopt</code> - gives more IDE like suggestion menu</li>
+<li><code>clipboard</code> - shared clipboard</li>
+<li><code>hidden</code> - hides buffers</li>
+<li><code>mouse</code> - mouse everywhere</li>
+<li><code>number</code> &amp; <code>relativenumber</code> - line numbers enabled, that are relative to current line</li>
+<li><code>syntax detection based on filetype</code></li>
+</ul>
+<p>and as such, the rest are self-explanatory. <code>&quot; Italic</code> for better italics support, when italics not working.</p>
+<pre data-lang="vim" style="background-color:#2b303b;color:#6c7079;" class="language-vim "><code class="language-vim" data-lang="vim"><span style="font-style:italic;color:#5f697a;">&quot; Colours
+</span><span style="color:#5ebfcc;">colorscheme</span><span style="color:#abb2bf;"> tokyonight
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:airline_theme</span><span style="color:#abb2bf;">=</span><span style="color:#9acc76;">&#39;base16_dracula&#39;
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:airline_powerline_fonts</span><span style="color:#abb2bf;"> = </span><span style="color:#db9d63;">1
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:airline</span><span style="color:#abb2bf;">#extensions#tabline#enabled = </span><span style="color:#db9d63;">1
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:tokyonight_style</span><span style="color:#abb2bf;"> = </span><span style="color:#9acc76;">&quot;night&quot;
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:tokyonight_italic_functions</span><span style="color:#abb2bf;"> = </span><span style="color:#db9d63;">1
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:tokyonight_sidebars</span><span style="color:#abb2bf;"> = [ </span><span style="color:#9acc76;">&quot;qf&quot;</span><span style="color:#abb2bf;">, </span><span style="color:#9acc76;">&quot;vista_kind&quot;</span><span style="color:#abb2bf;">, </span><span style="color:#9acc76;">&quot;terminal&quot;</span><span style="color:#abb2bf;">, </span><span style="color:#9acc76;">&quot;packer&quot;</span><span style="color:#abb2bf;"> ]
+</span><span style="color:#abb2bf;">
+</span><span style="font-style:italic;color:#5f697a;">&quot; Nerdtree
+</span><span style="color:#5ebfcc;">let</span><span style="color:#abb2bf;"> NERDTreeShowHidden=</span><span style="color:#db9d63;">1
+</span><span style="color:#5ebfcc;">nnoremap </span><span style="color:#abb2bf;">&lt;C-n&gt; :NERDTree&lt;CR&gt;
+</span><span style="color:#5ebfcc;">nnoremap </span><span style="color:#abb2bf;">&lt;C-t&gt; :NERDTreeToggle&lt;CR&gt;
+</span><span style="color:#5ebfcc;">nnoremap </span><span style="color:#abb2bf;">&lt;C-f&gt; :NERDTreeFind&lt;CR&gt;
+</span><span style="color:#abb2bf;">
+</span><span style="font-style:italic;color:#5f697a;">&quot; Tabs
+</span><span style="color:#5ebfcc;">nnoremap </span><span style="color:#abb2bf;">&lt;C-h&gt; :tabprev&lt;CR&gt;
+</span><span style="color:#5ebfcc;">nnoremap </span><span style="color:#abb2bf;">&lt;C-l&gt; :tabnext&lt;CR&gt;
+</span></code></pre>
+<p>Here I have set my <code>colorscheme</code>, configured <code>airline</code>and added some keybindings for navigating tabs and using NERDTree.</p>
+<pre data-lang="vim" style="background-color:#2b303b;color:#6c7079;" class="language-vim "><code class="language-vim" data-lang="vim"><span style="font-style:italic;color:#5f697a;">&quot; For markdown
+</span><span style="font-style:italic;color:#5f697a;">&quot; Disable math tex conceal feature
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:tex_conceal</span><span style="color:#abb2bf;"> = </span><span style="color:#9acc76;">&#39;&#39;
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:vim_markdown_math</span><span style="color:#abb2bf;"> = </span><span style="color:#db9d63;">1
+</span><span style="color:#abb2bf;">
+</span><span style="font-style:italic;color:#5f697a;">&quot; Markdown
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:vim_markdown_folding_disabled</span><span style="color:#abb2bf;"> = </span><span style="color:#db9d63;">1
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:vim_markdown_frontmatter</span><span style="color:#abb2bf;"> = </span><span style="color:#db9d63;">1
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:vim_markdown_conceal</span><span style="color:#abb2bf;"> = </span><span style="color:#db9d63;">0
+</span><span style="color:#5ebfcc;">let </span><span style="color:#eb6772;">g:vim_markdown_fenced_languages</span><span style="color:#abb2bf;"> = [</span><span style="color:#9acc76;">&#39;tsx=typescriptreact&#39;</span><span style="color:#abb2bf;">]
+</span></code></pre>
+<p>These are the markdown plugin settings</p>
+<h2 id="workflow">Workflow</h2>
+<p>I myself am still figuring out a good workflow coming from Jetbrains IDE's. I have been using tabs on vim, by using the <code>:tabnew</code> command to create new tabs, selecting the required
+file using Nerdtree and switching between tabs using <code>:tabprev</code> and <code>:tabnext</code>.</p>
+
+          </div>
+        </article>
+      </div>
+      
+      <div class="column is-2 is-hidden-mobile">
+        <aside class="menu" style="position: sticky; top: 48px">
+          <p class="heading has-text-weight-bold">Contents</p>
+          <ul class="menu-list">
+            
+            <li>
+              <a id="link-a-neovim-guide" class="toc is-size-7 is-active"
+                href="https://hegdeatri.com/posts/neovim-guide/#a-neovim-guide">
+                A neovim guide
+              </a>
+              
+              <ul>
+                
+                <li>
+                  <a id="link-configuration-file" class="toc is-size-7" href="https://hegdeatri.com/posts/neovim-guide/#configuration-file">
+                    Configuration file
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-workflow" class="toc is-size-7" href="https://hegdeatri.com/posts/neovim-guide/#workflow">
+                    Workflow
+                  </a>
+                </li>
+                
+              </ul>
+              
+            </li>
+            
+          </ul>
+        </aside>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head" >
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+          
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;posts&#x2F;installing-kernels-arch&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              Installing kernels in Arch Linux
+            </a>
+          </div>
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;posts&#x2F;virtual-machines-arch&#x2F;">
+              Virtual machines on linux using QEMU&#x2F;KVM and virt-manager<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+            
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p>
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+
+  
+  
+  
+  
+  <script src="https://hegdeatri.com/elasticlunr.min.js"></script>
+  <script src="https://hegdeatri.com/search_index.en.js"></script><script src="https://hegdeatri.com/js/site.js"></script>
+
+  
+
+<script type="text/javascript">
+  const menuBarHeight = document.querySelector("nav.navbar").clientHeight;
+  const tocItems = document.querySelectorAll(".toc");
+  const navSections = new Array(tocItems.length);
+
+  tocItems.forEach((el, i) => {
+    let id = el.getAttribute("id").substring(5);
+    navSections[i] = document.getElementById(id);
+  })
+
+  function isVisible(tocIndex) {
+    const current = navSections[tocIndex];
+    const next = tocIndex < tocItems.length - 1 ? navSections[tocIndex + 1]
+      : document.querySelectorAll("section.section").item(1);
+
+    const c = current.getBoundingClientRect();
+    const n = next.getBoundingClientRect();
+    const h = (window.innerHeight || document.documentElement.clientHeight);
+
+    return (c.top <= h) && (n.top - menuBarHeight >= 0);
+  }
+
+  function activateIfVisible() {
+    for (b = true, i = 0; i < tocItems.length; i++) {
+      if (b && isVisible(i)) {
+        tocItems[i].classList.add('is-active');
+        b = false;
+      } else
+        tocItems[i].classList.remove('is-active');
+    }
+  }
+
+  var isTicking = null;
+  window.addEventListener('scroll', () => {
+    if (!isTicking) {
+      window.requestAnimationFrame(() => {
+        activateIfVisible();
+        isTicking = false;
+      });
+      isTicking = true;
+    }
+  }, false);
+</script>
+
+
+
+
+
+  
+  
+</body>
+
+</html>

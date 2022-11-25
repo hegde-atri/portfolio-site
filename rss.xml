@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Atri Hegde</title>
+        <link>https://hegdeatri.com</link>
+        <description>A simple blog theme focused on writing powered by Bulma and Zola</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://hegdeatri.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sun, 23 Oct 2022 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>Update</title>
+            <pubDate>Sun, 23 Oct 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/update/</link>
+            <guid>https://hegdeatri.com/posts/update/</guid>
+            <description>&lt;p&gt;After trying to build my own website, i was hit with constant undecisiveness and change in preferances. I soon also became busy with some freelance work and university.&lt;&#x2F;p&gt;
+&lt;p&gt;I hope to utilize my break in December to properly finish updating my website and replace this old one. I am also trying to phase out uses of my custom email, since I have had enough fun, and don&#x27;t think hosting my own email server (using a VPS) is worth it. I will be posting a lot more once my website is updated, and also keep a eye out for a some youtube tutorials.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;framework-of-choice&quot;&gt;Framework of choice&lt;&#x2F;h2&gt;
+&lt;p&gt;Although I feel like Zola is a great tool. I would like to learn the Astro framework, known for not being javascript dependant. This means that most of what I will write will be HTML, and will result in a lightweight, fast website, whilst having 100% customizability and also it is more &amp;quot;mainstream&amp;quot; friendly and innovative.&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>hegde-arch</title>
+            <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/hegde-arch/</link>
+            <guid>https://hegdeatri.com/projects/hegde-arch/</guid>
+            <description>&lt;h1 id=&quot;hegde-arch-github&quot;&gt;hegde-arch &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;hegde-arch&quot;&gt;(Github)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;I have had enough hopping between different configs, colour-schemes, window managers and applications. Soon I will be starting university and will not have
+enough time to do any of the things I used to do, and have time to experiment with different software. I think I have gotten pretty comfortable
+using some of the software that I am using currently and therefore decided to start a repository for basically having everything I need.&lt;&#x2F;p&gt;
+&lt;p&gt;The deadline I have set for this is December 2022. It will be aesthetically pleasing (highly subjective) and have all the features I need to make my life easier.
+It will by no means be an iso. It will just a git repo that you can clone and use to install arch and my configs.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Arch Linux&lt;&#x2F;li&gt;
+&lt;li&gt;bspwm&lt;&#x2F;li&gt;
+&lt;li&gt;sxhkd&lt;&#x2F;li&gt;
+&lt;li&gt;polybar&lt;&#x2F;li&gt;
+&lt;li&gt;rofi&lt;&#x2F;li&gt;
+&lt;li&gt;eww (replacing polybar)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;&#x2F;h2&gt;
+&lt;p&gt;TOC&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;structure&quot;&gt;Structure&lt;&#x2F;h2&gt;
+&lt;p&gt;TOC&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Warehouse Management</title>
+            <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/warehouse-management/</link>
+            <guid>https://hegdeatri.com/projects/warehouse-management/</guid>
+            <description>&lt;h1 id=&quot;warehouse-management&quot;&gt;Warehouse Management&lt;&#x2F;h1&gt;
+&lt;p&gt;This project is currently in the planning phase!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;current-problems-analysis&quot;&gt;Current problems + Analysis&lt;&#x2F;h2&gt;
+&lt;p&gt;There are no free warehouse management software that is tested for exploits, or can be written in unsafe code.
+My goal for this project is to build a reliable application that can be used on a daily basis.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;plan&quot;&gt;Plan&lt;&#x2F;h2&gt;
+&lt;p&gt;My project will include two Stages, getting a desktop app working with a backend database, and then getting
+a website working that can be used for customers&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;stage-1&quot;&gt;Stage 1&lt;&#x2F;h3&gt;
+&lt;p&gt;Cross-platform desktop app that can be used by staff&#x2F;internal use only.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;stage-2&quot;&gt;Stage 2&lt;&#x2F;h3&gt;
+&lt;p&gt;A website that can be used by customers to order your goods.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;&#x2F;h2&gt;
+&lt;p&gt;I am considering using either Avalonia UI or .NET MAUI frameworks as both provide me with a single codebase for all platforms (mobile + desktop + web).
+Unfortunately .NET MAUI, the framework I wanted to use does not support Linux.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;build&quot;&gt;Build&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;testing&quot;&gt;Testing&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;maintainance&quot;&gt;Maintainance&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;extra&quot;&gt;Extra&lt;&#x2F;h2&gt;
+&lt;p&gt;If you want to use this software in a professional setting, and would like addition of specific
+features&#x2F;compatability (example: support for ARM devices with NFC login) get in contact with me through my email: &lt;a href=&quot;mailto:atri@hegdeatri.com&quot;&gt;atri@hegdeatri.com&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Pricing for support coming soon.&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Switching from vim to emacs</title>
+            <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/switching-to-emacs/</link>
+            <guid>https://hegdeatri.com/posts/switching-to-emacs/</guid>
+            <description>&lt;p&gt;I had started using neovim, with a custom config before moving onto a framework for neovim called astronvim. It
+was a really good framework, but I do not feel like learning lua for the sole reason of extending my vim config.
+I had always wanted to use emacs, especially org-mode within emacs. I had tried &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;doomemacs&#x2F;doomemacs&quot;&gt;Doom Emacs&lt;&#x2F;a&gt;,
+a distribution of emacs focused on speed, and reliability which is great, and this is what I&#x27;ll be using.&lt;&#x2F;p&gt;
+&lt;p&gt;I will be completely changing from my old config, which was configured to use the colemak layout which I was using.
+I have now switched back to the qwerty layout, although I do feel slower and significantly less ergonomic, I only seem to
+get uncomfortable after long periods of time, such as ~4 hours of typing. I currently using a kanban board in obsidian
+to manage and organise tasks, but want to switch to org mode. I started watching some DistroTube videos on youtube
+to help me get started, and will be updating you guys soon on how far I&#x27;ve managed to progress using emacs. Currently
+can use it instead of vim, in-fact I&#x27;m using it right now and love it so far.&lt;&#x2F;p&gt;
+&lt;p&gt;People say that emacs can basically be your operating system because of how powerful it is. I look forward to&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;start using ewww while developing websites.&lt;&#x2F;li&gt;
+&lt;li&gt;learn how to utilize buffers properly.&lt;&#x2F;li&gt;
+&lt;li&gt;figure out markdown live preview.&lt;&#x2F;li&gt;
+&lt;li&gt;configure custom keybinds and commands.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>Looking for a note taking app? You got it!</title>
+            <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/note-taking-app/</link>
+            <guid>https://hegdeatri.com/posts/note-taking-app/</guid>
+            <description>&lt;p&gt;I am going to be starting university in a few months, and wanted to settle down on a note 
+taking app that would carry me through my 4 years at university. I have been using obsidian for well
+over 6 months now, taking small notes, and using it as a journal at times, and am used to how plugins,
+and other features of the app work. However it closed source, and I felt the need to switch to something open
+source and free. This is when I found joplin.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;pros&quot;&gt;Pros&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;It is free and open source software.&lt;&#x2F;li&gt;
+&lt;li&gt;It offers free sync options using nextcloud&#x2F;WebDAV or other providers such onedrive and dropbox.&lt;&#x2F;li&gt;
+&lt;li&gt;It offers a fully CLI version for users that want it. This is something I&#x27;ll definitely be checking out soon.&lt;&#x2F;li&gt;
+&lt;li&gt;It offers free end to end encryption.&lt;&#x2F;li&gt;
+&lt;li&gt;Enhanced markdown support.&lt;&#x2F;li&gt;
+&lt;li&gt;Very useful webclipper function (requires browser addon, allowing you to quickly screenshot, clip url, or save page content as markdown or html).&lt;&#x2F;li&gt;
+&lt;li&gt;Easy exports and imports.&lt;&#x2F;li&gt;
+&lt;li&gt;No paywall for features.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;cons&quot;&gt;Cons&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Desktop app uses electron.&lt;&#x2F;li&gt;
+&lt;li&gt;I dislike the way notebooks are managed, I prefer the &#x27;vault&#x27; system from obsidian that I used to use.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;Although its a bit different from used to, it seems powerful enough for my needs, and has a lot of features that seem useful to me. It is a shame that
+uses electron but I do understand the reason for doing so. All in all I think its fantastic for my use case, which would be note taking for university.
+I will be learning LaTeX soon, so keep an eye out for the review of LaTeX; since I will probably replace joplin with LaTeX if I become proficient enough in it!&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>What using Linux has taught me.</title>
+            <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/using-linux/</link>
+            <guid>https://hegdeatri.com/posts/using-linux/</guid>
+            <description>&lt;p&gt;About 10 months ago last year I went from using Windows 10 and trying out Arch Linux with basically
+no prior knowledge, threw myself into the deep end by using ArcoLinuxB with the KDE Plasma desktop
+environment. I have always dual booted windows, simply because some games I play do not have anti-cheat
+support on the linux. That being said, for the first month I barely booted into linux, however towards the
+end of the month, I started &#x27;ricing&#x27; my computer. This initially increased my usage and exposure.
+You can see one of my first times messing around with linux.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;first.png&quot; alt=&quot;first rice&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;At this stage, I was just getting started learning about the FOSS community and the actual benefits of
+using linux. However this was just the start of my journey.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;second.jpg&quot; alt=&quot;second rice&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;After 3-4 months of using KDE, I stumbled upon the concept of &#x27;tiling window managers&#x27;. In particular
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dwm.suckless.org&#x2F;&quot;&gt;dwm&lt;&#x2F;a&gt;, a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;suckless.org&quot;&gt;suckless&lt;&#x2F;a&gt; software. I had watched this 
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=wRh8HQ4ICwE&quot;&gt;video&lt;&#x2F;a&gt;, where the youtuber &#x27;Mental Outlaw&#x27; basically
+showcased dwm, and he totally sold it to me! I installed ArcoLinux with dwm and started messing around with it.
+I also came across a patching guide on youtube for dwm which I followed and started to get into the nitty
+gritty of linux, being able to do everything I needed to from the terminal. You can find my suckless utility 
+repos on my github (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;dwm&quot;&gt;dwm&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;dmenu&quot;&gt;dmenu&lt;&#x2F;a&gt;, 
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;dwmblocks-async&quot;&gt;dwmblocks-async&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;Now I reinstalled vanilla arch, using the installation guide, succeeded on my third try after about 4 hours.
+DWM is a fantastic window manager, except for the fact that I could not get the system tray patch to work.
+No matter which order I applied it, and manual intervention never worked out for me, so I tried out bspwm!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;third.png&quot; alt=&quot;third rice&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This was about 8 months into using ArchLinux. I had made my own &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;arch-install&quot;&gt;arch-install&lt;&#x2F;a&gt;
+script and was starting to manage my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;dotfiles&quot;&gt;dotfiles&lt;&#x2F;a&gt;.
+I have now switched from dwm to bspwm, and have loved it! It does everything I need it to do, and I like using
+polybar, sxhkd and rofi. I have also discovered a lot of useful FOSS alternatives to proprietary software I 
+had been using before.&lt;&#x2F;p&gt;
+&lt;p&gt;I am now almost always booting into linux, although sometimes I do boot into windows to play games that need anti-cheat. I have started to
+use neovim properly as my &#x27;IDE&#x27;. After messing around with a custom nvim config, I started using Astronvim, 
+which was excellent. However I am learning emacs(doom-emacs) in particular, and also made my own dotfiles switching
+script, however I want to replace that soon with something more stable and easier to deploy. I am slowly growing
+out of my &#x27;aesthetic&#x27; phase and willing to sacrifice looks for something more efficient, or fits into my workflow better. I also seem to not be able to use proper desktop environments, as they seem too slow now.&lt;&#x2F;p&gt;
+&lt;p&gt;Overall, I am very glad I tried out using arch linux, just so i could say &#x27;I use arch btw.&#x27; to actually learning
+to love this distribution, before ArcoLinux, I had tried out several other repos, essentially distrohopping between
+fedora, popOS, and manjaro. However I also had recommended trying this out to a few friends, and realized after
+a few months that just using linux is not for everyone, some people just love &lt;del&gt;Microsoft collecting their data&lt;&#x2F;del&gt;
+the ease of using windows, just works for them. But always do recommend it to them without forcing it onto them
+as when it is forced, and something goes wrong, especially if they start out with Arch, it will stain &#x27;linux&#x27; and
+free software in general for them. With that being said, If you haven&#x27;t tried out arch linux already, I recommend
+trying it out with something like popOS and then when your comfortable with it and want to use a minimalist distro,
+checking out ArchLinux!&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Installing kernels in Arch Linux</title>
+            <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/installing-kernels-arch/</link>
+            <guid>https://hegdeatri.com/posts/installing-kernels-arch/</guid>
+            <description>&lt;h1 id=&quot;installing-kernels-in-arch-linux&quot;&gt;Installing kernels in Arch Linux&lt;&#x2F;h1&gt;
+&lt;p&gt;Messing around with gaming on linux, I found out that CS:GO, Team Fortress 2, and any games that used
+the source engine were particularly laggy. This issue seems to be fixed when I use the zen kernel. I will walk
+you through installing the zen kernel on Arch Linux.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;getting-the-required-modules&quot;&gt;Getting the required modules&lt;&#x2F;h2&gt;
+&lt;p&gt;We will need to install the kernel itself.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; linux-zen linux-zen-headers
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If you are using a nvidia graphics card, replace your nvidia (drivers) package with nvidia-dkms package.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; dkms nvidia-dkms
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;modifying-grub&quot;&gt;Modifying GRUB&lt;&#x2F;h2&gt;
+&lt;p&gt;Now we are gonna change the grub config to make it easier to use with multiple kernels.
+Lets open the grub config file using &lt;code&gt;sudo vim &#x2F;etc&#x2F;default&#x2F;grub&lt;&#x2F;code&gt;.
+Now modify the following properties (&lt;code&gt;GRUB_DEFAULT=saved&lt;&#x2F;code&gt; needs to added, isn&#x27;t already present)&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;GRUB_DEFAULT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;saved
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;GRUB_SAVEDDEFAULT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;GRUB_DISABLE_SUBMENU&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;y
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then to apply the changes regenerate your grub config using:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; grub-mkconfig&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &#x2F;boot&#x2F;grub&#x2F;grub.cfg
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;em&gt;The location of your grub config might vary!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Now you should be able to restart your computer and boot into your machine with the linux-zen kernel!
+Souce engine based games seem to run much better now and the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zen-kernel&#x2F;zen-kernel&quot;&gt;zen-kernel&lt;&#x2F;a&gt; is
+supposed to better for day to day use.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;issues&quot;&gt;Issues&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;booting&#x2F;logging in to a black screen: run &lt;code&gt;mkinitcpio -P&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>A neovim guide</title>
+            <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/neovim-guide/</link>
+            <guid>https://hegdeatri.com/posts/neovim-guide/</guid>
+            <description>&lt;h1 id=&quot;a-neovim-guide&quot;&gt;A neovim guide&lt;&#x2F;h1&gt;
+&lt;p&gt;This is a guide to get you started using neovim, replacing your IDE. We are gonna be installing neovim on a linux machine,
+installing plugins and customizing it to our preference.&lt;&#x2F;p&gt;
+&lt;p&gt;I am still learning vim, but soon there will be a guide to make vim replace your IDE.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;configuration-file&quot;&gt;Configuration file&lt;&#x2F;h2&gt;
+&lt;p&gt;I used to use vim, without any plugins before this and am accustomed to typing &lt;code&gt;vim&lt;&#x2F;code&gt; in the terminal, so I set myself an alias in my bashrc file.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;...
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;alias &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;nvim&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;...
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The configuration file for neovim is located at &lt;code&gt;~&#x2F;.config&#x2F;nvim&#x2F;init.vim&lt;&#x2F;code&gt;. First let us configure some basic options for neovim.
+I am going to createe the directory and open &lt;code&gt;init.vim&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;mkdir -p ~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;.config&#x2F;nvim
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;vim ~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;.config&#x2F;nvim&#x2F;init.vim
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;My configuration so far: &lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;vim&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-vim &quot;&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;call &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;plug#begin&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;()
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Appearance
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;vim-airline&#x2F;vim-airline&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;ryanoasis&#x2F;vim-devicons&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;folke&#x2F;tokyonight.nvim&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;branch&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;main&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;vim-airline&#x2F;vim-airline-themes&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Utilities
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;sheerun&#x2F;vim-polyglot&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;jiangmiao&#x2F;auto-pairs&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;ap&#x2F;vim-css-color&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;preservim&#x2F;nerdtree&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Completion &#x2F; linters &#x2F; formatters
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Plug &amp;#39;neoclide&#x2F;coc.nvim&amp;#39;,  {&amp;#39;branch&amp;#39;: &amp;#39;master&amp;#39;, &amp;#39;do&amp;#39;: &amp;#39;yarn install&amp;#39;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;plasticboy&#x2F;vim-markdown&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Git
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;airblade&#x2F;vim-gitgutter&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;call &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;plug#end&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;() 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;These are the plugins I use&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vim-airline&lt;&#x2F;code&gt; - for the status bars&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-devicons&lt;&#x2F;code&gt; - provides icons&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;tokyonight.vim&lt;&#x2F;code&gt; &amp;amp; &lt;code&gt;vim-airline-themes&lt;&#x2F;code&gt; - themes&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-polygot&lt;&#x2F;code&gt; - language pack for vim&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;auto-pairs&lt;&#x2F;code&gt; - automatically pairs syntax&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-css-color&lt;&#x2F;code&gt; - hex values have colour background&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;nerdtree&lt;&#x2F;code&gt; - tree style file explorer&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-markdown&lt;&#x2F;code&gt; - markdown related features&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-gitgutter&lt;&#x2F;code&gt; - git gutter&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;vim&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-vim &quot;&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Options
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; set background=dark
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; clipboard=unnamedplus
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; completeopt=noinsert,menuone,noselect
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; cursorline
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; hidden
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; inccommand=split
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; mouse=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;a
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; number
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; relativenumber
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; splitbelow splitright
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; title
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ttimeoutlen=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; wildmenu
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Tabs size
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set expandtab
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; shiftwidth=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;2
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; tabstop=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;2
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;filetype&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; plugin indent on
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;syntax on
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Italics
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;&amp;amp;t_ZH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\e[3m&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;&amp;amp;t_ZR&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\e[23m&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;completeopt&lt;&#x2F;code&gt; - gives more IDE like suggestion menu&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;clipboard&lt;&#x2F;code&gt; - shared clipboard&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;hidden&lt;&#x2F;code&gt; - hides buffers&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;mouse&lt;&#x2F;code&gt; - mouse everywhere&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;number&lt;&#x2F;code&gt; &amp;amp; &lt;code&gt;relativenumber&lt;&#x2F;code&gt; - line numbers enabled, that are relative to current line&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;syntax detection based on filetype&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;and as such, the rest are self-explanatory. &lt;code&gt;&amp;quot; Italic&lt;&#x2F;code&gt; for better italics support, when italics not working.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;vim&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-vim &quot;&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Colours
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;colorscheme&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; tokyonight
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:airline_theme&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;base16_dracula&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:airline_powerline_fonts&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:airline&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;#extensions#tabline#enabled = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:tokyonight_style&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;night&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:tokyonight_italic_functions&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:tokyonight_sidebars&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = [ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;qf&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;vista_kind&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;terminal&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;packer&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Nerdtree
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; NERDTreeShowHidden=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-n&amp;gt; :NERDTree&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-t&amp;gt; :NERDTreeToggle&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-f&amp;gt; :NERDTreeFind&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Tabs
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-h&amp;gt; :tabprev&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-l&amp;gt; :tabnext&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here I have set my &lt;code&gt;colorscheme&lt;&#x2F;code&gt;, configured &lt;code&gt;airline&lt;&#x2F;code&gt;and added some keybindings for navigating tabs and using NERDTree.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;vim&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-vim &quot;&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; For markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Disable math tex conceal feature
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:tex_conceal&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_math&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_folding_disabled&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_frontmatter&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_conceal&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_fenced_languages&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;tsx=typescriptreact&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;These are the markdown plugin settings&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;workflow&quot;&gt;Workflow&lt;&#x2F;h2&gt;
+&lt;p&gt;I myself am still figuring out a good workflow coming from Jetbrains IDE&#x27;s. I have been using tabs on vim, by using the &lt;code&gt;:tabnew&lt;&#x2F;code&gt; command to create new tabs, selecting the required
+file using Nerdtree and switching between tabs using &lt;code&gt;:tabprev&lt;&#x2F;code&gt; and &lt;code&gt;:tabnext&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Virtual machines on linux using QEMU&#x2F;KVM and virt-manager</title>
+            <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/virtual-machines-arch/</link>
+            <guid>https://hegdeatri.com/posts/virtual-machines-arch/</guid>
+            <description>&lt;h1 id=&quot;install-qemu-kvm-and-virt-manager&quot;&gt;Install QEMU&#x2F;KVM and virt-manager&lt;&#x2F;h1&gt;
+&lt;p&gt;Installing all the packages we need.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; qemu virt-manager archlinux-keyring virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables iptables libguestfs
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now lets start the KVM libvirt service&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; systemctl enable&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; --now&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; libvirtd.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Make sure libvirtd is running&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; systemctl status libvirtd.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now lets give permissions for our standard user to manage KVM.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; vim &#x2F;etc&#x2F;libvirt&#x2F;libvirtd.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now uncomment &lt;code&gt;unix_sock_group = &amp;quot;libvirt&amp;quot;&lt;&#x2F;code&gt; and &lt;code&gt;unix_sock_rw_perms = &amp;quot;0770&amp;quot;&lt;&#x2F;code&gt;.
+Now add your user to the libvirt group and restart the libvirt service.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; usermod&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -a -G&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; libvirt $(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;whoami&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;newgrp&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; libvirt
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; systemctl restart libvirtd.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;enabling-nested-virtualization&quot;&gt;Enabling Nested Virtualization&lt;&#x2F;h2&gt;
+&lt;p&gt;This allows you to run virtual machines inside virtual machines.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# Intel CPU
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; modprobe&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -r&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; kvm_intel
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; modprobe kvm_intel nested=1
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# AMD CPU
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; modprobe&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -r&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; kvm_amd
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; modprobe kvm_amd nested=1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To make this configuration persistant: &lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;options kvm-intel nested=1&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; tee &#x2F;etc&#x2F;modprobe.d&#x2F;kvm-intel.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# Intel CPU
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;systool -m&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; kvm_intel&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -v &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nested
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &#x2F;sys&#x2F;module&#x2F;kvm_intel&#x2F;parameters&#x2F;nested
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# AMD CPU
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;systool -m&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; kvm_amd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -v &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nested
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &#x2F;sys&#x2F;module&#x2F;kvm_amd&#x2F;parameters&#x2F;nested 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;common-issues&quot;&gt;Common Issues&lt;&#x2F;h2&gt;
+&lt;p&gt;If your network &lt;code&gt;default&lt;&#x2F;code&gt; is not enabled run &lt;code&gt;sudo virsh net-start default&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h1&gt;
+&lt;p&gt;Now you can install your virtual machines using virt-manager&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Make your own website! ft. Zola</title>
+            <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/first-website-tutorial/</link>
+            <guid>https://hegdeatri.com/posts/first-website-tutorial/</guid>
+            <description>&lt;h1 id=&quot;make-your-own-website-ft-zola&quot;&gt;Make your own website ! ft. Zola&lt;&#x2F;h1&gt;
+&lt;p&gt;Zola is a static site generator, that uses templates to transform your content into static
+html pages. This means that development can be simple and quick, while also being easily modifiable.
+This site was built using Zola! It is incredibly easy to add posts&#x2F;projects and extend the site with more
+sections if needed. In this post, I will go through how to setup a website project using Zola.&lt;&#x2F;p&gt;
+&lt;p&gt;Zola also has &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;overview&quot;&gt;excellent documentation&lt;&#x2F;a&gt; that you should check out if you choose to use it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;installing-zola&quot;&gt;Installing Zola&lt;&#x2F;h2&gt;
+&lt;p&gt;You can install zola on your system by referring to their &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;installation&#x2F;&quot;&gt;installation guide&lt;&#x2F;a&gt;.
+If you are using Arch Linux, you can simply install the zola package.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; zola
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;creating-your-project&quot;&gt;Creating your project&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;choosing-theme&quot;&gt;Choosing theme&lt;&#x2F;h2&gt;
+&lt;p&gt;One of the best options that comes with zola is to use one of many themes that users have created.
+You can view the themes on their &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;&quot;&gt;website&lt;&#x2F;a&gt;. This
+makes creating our website much more simpler as we do not have to worry about writing CSS for our site
+(CSS is way of styling a webpage). I have chosen the &lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Storing and managing dotfiles</title>
+            <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/storing-dots/</link>
+            <guid>https://hegdeatri.com/posts/storing-dots/</guid>
+            <description>&lt;h1 id=&quot;storing-and-managing-dotfiles&quot;&gt;Storing and managing dotfiles&lt;&#x2F;h1&gt;
+&lt;p&gt;After messing around and customizing my Arch Linux installation, I wanted a way of reproducing the same aesthetic and configuration on any computer when needed.
+This meant I had to start managing and backing up my dotfiles. After scouring the internet, I came across 
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;stow&#x2F;&quot;&gt;GNU Stow&lt;&#x2F;a&gt; - a symlink farm manager. It can create symlinks easily. So I made a repository called &lt;code&gt;.dotfiles&lt;&#x2F;code&gt;
+where I stored my dots. This was really cool as I could clone it to my home dir and run &lt;code&gt;stow *&lt;&#x2F;code&gt; and magically I would have my configs.&lt;&#x2F;p&gt;
+&lt;p&gt;However I took it one step further and wrote a little script that gave me much more power, essentially being able to manage multiple different
+configurations at once and being able to switch between them effortlessly. You can check it out &lt;a href=&quot;&#x2F;projects&#x2F;arch-config&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;A use case for this would be if you use multiple window managers or multiple different linux distributions it is very easy to configure them once
+and use them again. Overall I have learnt to deploy my configurations to any computer&#x2F;VM, which makes my life a lot easier and saves me a lot of time.&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Arch Linux installer</title>
+            <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/arch-install/</link>
+            <guid>https://hegdeatri.com/projects/arch-install/</guid>
+            <description>&lt;h1 id=&quot;arch-linux-installer-github&quot;&gt;Arch Linux Installer &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;arch-install&quot;&gt;(GitHub)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Currently v2.0 of this script is in the making. Forgot to branch my commmits out, so if you want to use
+it please use &lt;code&gt;archinstall.sh.bak&lt;&#x2F;code&gt; file.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;improvements&quot;&gt;Improvements&lt;&#x2F;h2&gt;
+&lt;p&gt;Features that are coming to v2.0:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disk encryption.&lt;&#x2F;li&gt;
+&lt;li&gt;Option to have different partitions for &lt;code&gt;&#x2F;&lt;&#x2F;code&gt; and &lt;code&gt;&#x2F;home&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Maybe a TUI.&lt;&#x2F;li&gt;
+&lt;li&gt;My &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;.dotfiles&quot;&gt;arch config swapper&lt;&#x2F;a&gt; and also optionally my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;linux_things&#x2F;wallpapers&quot;&gt;wallpapers&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>Banking Application</title>
+            <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/banking-application/</link>
+            <guid>https://hegdeatri.com/projects/banking-application/</guid>
+            <description>&lt;p&gt;This project was chosen as my Non Exam Assessment coursework for Computer Science (2021-2022) A-level. Although the project isn&#x27;t as polished as it can be,
+the quality of code written has improved significantly towards the end of the project. Due to deadlines of the project, colour scheme and design language
+is not 100% consistent nor is it meant to be. This is my first &amp;quot;from scratch&amp;quot; website, working with Angular and .NET. Therefore this is almost as a big 
+reference project I will build upon in other projects.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;banking-application-front-end&quot;&gt;Banking Application - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;BankingApplication-fe&quot;&gt;front end&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This project is made using the Angular framework. My planning pdf with various diagrams can be seen &lt;a href=&quot;final.pdf&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;For the theming and design of the website, I decided to try using Angular material which looked professional and seemed
+to have all the components I needed. I have also implemented graphs and steppers in reactive forms. The forms also 
+feature validation and validation hints. Most buttons also have tooltips.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve learnt a lot of web development skills with this, such as &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Calling CRUD API&#x27;s.&lt;&#x2F;li&gt;
+&lt;li&gt;Formatting data into something visually appealing.&lt;&#x2F;li&gt;
+&lt;li&gt;Pagination in tables.&lt;&#x2F;li&gt;
+&lt;li&gt;Graphs from user data.&lt;&#x2F;li&gt;
+&lt;li&gt;Routing and guarding routes (i.e. block manager pages when logged in as a customer.)&lt;&#x2F;li&gt;
+&lt;li&gt;Searching and filtering through items to be displaced&lt;&#x2F;li&gt;
+&lt;li&gt;Dynamically display items based on user data.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The Azure B2C authentication can be done in 2 different methods, either through a popup or through redirection, both methods store a cookie
+to remember session details (i.e. keeps you logged in). I have also made use of a JWT token, and decoded to get first name, email and other information 
+displayed on the navbar.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;banking-application-back-end&quot;&gt;Banking Application - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;BankingApplication-be&quot;&gt;back end&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The backend solution is comprised of 2 projects. The API project, the EF Core project.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;api&quot;&gt;API&lt;&#x2F;h3&gt;
+&lt;p&gt;First I created my model classes, which will get mapped data from the database. These model classes will have only the fields required
+by the front end website. This abstraction also helps us remove any sensitive fields that we need to remove.&lt;&#x2F;p&gt;
+&lt;p&gt;Each controller folder (can be viewed &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;BankingApplication-be&#x2F;tree&#x2F;main&#x2F;Bank.API&#x2F;Controllers&quot;&gt;here&lt;&#x2F;a&gt;) have their own repository interfaces that contain only the necassary methods. 
+Each controller folder also has its required controller classes. With this we can add authentication, and required scopes for the api paths,
+making sure that each user can only use api&#x27;s withing their scope set in Azure B2C.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ef-core&quot;&gt;EF Core&lt;&#x2F;h3&gt;
+&lt;p&gt;You can find the project under the Bank.Data folder. It contains the entities folder, from which EF core generates
+database schemas and the Migrations folder which EF Core uses to make changes to the database schema. This allows for
+&amp;quot;versioning&amp;quot; of our database, allowing us to rollback if a new change breaks the database&#x2F;service or isn&#x27;t what we
+expected it to be. I have used EF Core in conjunction with Microsoft SQL Server.&lt;&#x2F;p&gt;
+&lt;p&gt;I have written a trigger for new transaction entries on the database (in the SQL folder).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;objectives&quot;&gt;Objectives&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;user&quot;&gt;User&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;User will be able to login using his credentials.&lt;&#x2F;li&gt;
+&lt;li&gt;User entered email should be verified with a confirmation email.&lt;&#x2F;li&gt;
+&lt;li&gt;User should be able to change their password (Azure B2C).&lt;&#x2F;li&gt;
+&lt;li&gt;User should be able to setup 2 Factor Authentication (2FA).&lt;&#x2F;li&gt;
+&lt;li&gt;Support user management using Azure Active Directories.&lt;&#x2F;li&gt;
+&lt;li&gt;Use authentication standard of OpenID &#x2F; OAuth&lt;&#x2F;li&gt;
+&lt;li&gt;Customers logged in should have a persistent access to the navbar.&lt;&#x2F;li&gt;
+&lt;li&gt;Edit details of existing payee.&lt;&#x2F;li&gt;
+&lt;li&gt;View transaction history&lt;&#x2F;li&gt;
+&lt;li&gt;Filter transaction history&lt;&#x2F;li&gt;
+&lt;li&gt;Search transaction history&lt;&#x2F;li&gt;
+&lt;li&gt;Personal details can be viewed censored, so that it can be viewed in libraries or any other public places.&lt;&#x2F;li&gt;
+&lt;li&gt;View when their details was last changed, and by whom it was changed.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;teller&quot;&gt;Teller&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Deposit&#x2F;Withdraw money using account number.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;officer&quot;&gt;Officer&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create customer account.&lt;&#x2F;li&gt;
+&lt;li&gt;View transaction history of customer.&lt;&#x2F;li&gt;
+&lt;li&gt;View accounts table.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;manager&quot;&gt;Manager&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Should be able to create Teller and Branch officer accounts.&lt;&#x2F;li&gt;
+&lt;li&gt;View all users registered - customers, tellers and branch officers.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>First Post</title>
+            <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/first-post/</link>
+            <guid>https://hegdeatri.com/posts/first-post/</guid>
+            <description>&lt;p&gt;I finally got around to writing a static page website using zola. I can now save snippets of insight on here to refer back later or
+just have tips and tricks that will be of help to other people. Right now I&#x27;m learning the rust 🦀 programming language and working 
+on my arch install and arch config scripts.&lt;&#x2F;p&gt;
+&lt;p&gt;One of the mild annoyances that I have with the site is that, when dark mode is selected, and you switch to a different page on the site
+you will have a flash of the white theme, before the javascript activates dark mode. I don&#x27;t have a fix for this just yet as I am still learning zola.&lt;&#x2F;p&gt;
+&lt;p&gt;Things to update in the site:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;detect preferred theme from browser.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Some of the things I plan to do over summer: &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;start a hobby youtube channel.&lt;&#x2F;li&gt;
+&lt;li&gt;learn emacs or vim.&lt;&#x2F;li&gt;
+&lt;li&gt;optimize my workflow.&lt;&#x2F;li&gt;
+&lt;li&gt;learn to write pdfs using LaTeX.&lt;&#x2F;li&gt;
+&lt;li&gt;increase typing speed.&lt;&#x2F;li&gt;
+&lt;li&gt;potentially add a comments section to posts.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>Linux config script</title>
+            <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/arch-config/</link>
+            <guid>https://hegdeatri.com/projects/arch-config/</guid>
+            <description>&lt;h1 id=&quot;my-dotfiles-script-github&quot;&gt;My dotfiles script &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;.dotfiles&quot;&gt;(GitHub)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;After starting make multiple configs for multiple use cases, computers&#x2F;VM&#x27;s
+I&#x27;ve decided to make myself a script that allows me to switch between my configs,
+create a new config, or update a config all without the trouble of managing them manually.&lt;&#x2F;p&gt;
+&lt;p&gt;After scripting my &lt;a href=&quot;&#x2F;projects&#x2F;arch-install&#x2F;&quot;&gt;arch-install&lt;&#x2F;a&gt; I&#x27;ve gotten a lot more
+comfortable with bash scripting, although I wouldn&#x27;t bet on the quality its written in, as there is no 
+error checking or validation.&lt;&#x2F;p&gt;
+&lt;p&gt;Clone me: &lt;code&gt;git clone https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;.dotfiles ~&#x2F;.source&#x2F;dotfiles&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First run the firstrun.sh script &lt;code&gt;.&#x2F;firstrun.sh&lt;&#x2F;code&gt;. This installs any required fonts and packages.&lt;&#x2F;li&gt;
+&lt;li&gt;Then you can run the setup.sh script &lt;code&gt;.&#x2F;setup.sh&lt;&#x2F;code&gt;. You can exit the script at any time using &lt;code&gt;Ctrl-C&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Make sure that you have a &lt;code&gt;~&#x2F;.dotfiles&lt;&#x2F;code&gt; directory or else it will fail.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;To have this as a command from your shell, add an alias to your &lt;code&gt;.bashrc&lt;&#x2F;code&gt; file. (Example - &lt;code&gt;alias config-dots=&#x27;&#x2F;path&#x2F;to&#x2F;setup&#x27;&lt;&#x2F;code&gt;).
+If you have cloned the repo using the command above, then you can just
+use &lt;code&gt;alias config-dots=&#x27;$HOME&#x2F;.source&#x2F;dotfiles&#x2F;setup&#x27;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Feel free to use my script but in your own configs, but don&#x27;t forget to credit me ;).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;If you get an error make sure it has executible permissions &lt;code&gt;chmod +x &amp;lt;filename&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-it-works&quot;&gt;How it works&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;~&#x2F;.source&#x2F;dotfiles&lt;&#x2F;code&gt; - location of the repository with all your configs.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;~&#x2F;.dots_global&lt;&#x2F;code&gt; - directory will have all your global app configs. You may want to use global configs for bash, mpv, mpd, etc.
+Since they don&#x27;t really change much.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;~&#x2F;.dotfiles&lt;&#x2F;code&gt; - directory with specific configs to a rice. You will have configs of bspwm, sxhkd, polybar, etc.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;My script essentially manages moving, stowing and updating configs through a menu, removing the hassle of managing dots.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;dependencies&quot;&gt;Dependencies&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The bspwm&#x2F;sxhkd config relies on rofi config, and also custom scripts.&lt;&#x2F;li&gt;
+&lt;li&gt;custom scripts relies on pywal, pywalfox and also zathura-pywal.&lt;&#x2F;li&gt;
+&lt;li&gt;ranger config requires ueberzug.&lt;&#x2F;li&gt;
+&lt;li&gt;super + d, dictionary needs the didyoumean package intalled, either built from source or installed from the AUR.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;contributing&quot;&gt;Contributing&lt;&#x2F;h3&gt;
+&lt;p&gt;If you think you can improve this scripts: &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fork it.&lt;&#x2F;li&gt;
+&lt;li&gt;Create your branch.&lt;&#x2F;li&gt;
+&lt;li&gt;After your changes, make a pull request stating your changes, and your reasoning for them.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;dotfile-credits&quot;&gt;Dotfile credits&lt;&#x2F;h3&gt;
+&lt;p&gt;Here are the credits to some of the scripts&#x2F;configs used in the dotfiles themselves.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;If I have derived any custom scripts from already existing ones, credits mentioned in the file.&lt;&#x2F;li&gt;
+&lt;li&gt;one of the rofi configs is a modifed + themed version of rofi themes by adi1090x on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;adi1090x&#x2F;rofi&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;mpv config is from Tsuba&#x27;s config on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Tsubajashi&#x2F;mpv-settings&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Firefox config is using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;MrOtherGuy&#x2F;firefox-csshacks.git&quot;&gt;firefox-csshacks&lt;&#x2F;a&gt; by MrOtherGuy on github.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>Arch Linux Wiki</title>
+            <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/arch-wiki/</link>
+            <guid>https://hegdeatri.com/projects/arch-wiki/</guid>
+            <description>&lt;h1 id=&quot;this-project-is-undergoing-major-changes-will-be-back-up-in-about-3-4-weeks&quot;&gt;This project is undergoing major changes, will be back up in about 3-4 weeks&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;improved spelling, fixing grammatical errors.&lt;&#x2F;li&gt;
+&lt;li&gt;Much better structure and headings to make it easier to use and navigate.&lt;&#x2F;li&gt;
+&lt;li&gt;There will be a copy here but also github docs page once complete.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Navigate through this page&#x2F;guide using the table of contents on the right.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;installation&quot;&gt;Installation&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;dual-booting&quot;&gt;Dual booting&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;code&gt;powercfg &#x2F;h off&lt;&#x2F;code&gt; - Run this command (in windows) to disable hibernation completely. This gets rid of hybrid boot, which can cause your hard drive to be read-only.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;configuration&quot;&gt;Configuration&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;network-manager&quot;&gt;Network Manager&lt;&#x2F;h2&gt;
+&lt;p&gt;If you are using an ethernet connection, you should just be connected to the internet. If not refer to the arch wiki.&lt;&#x2F;p&gt;
+&lt;p&gt;For connecting to a wifi networking using Network Manager.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nmcli radio wifi on &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#turns wifi on.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nmcli dev wifi list &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#list networks.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nmcli dev wifi connect &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;network-ssid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;--ask
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can check if your internet connection works by using ping - &lt;code&gt;ping gnu.org&lt;&#x2F;code&gt; and viewing active connections by using
+&lt;code&gt;nmcli con show&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;aur-helper&quot;&gt;AUR helper&lt;&#x2F;h2&gt;
+&lt;p&gt;Paru is my AUR helper of choice, written in rust and constantly updated. Check out the paru repository on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;morganamilo&#x2F;paru&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S --needed&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; base-devel
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; clone https:&#x2F;&#x2F;aur.archlinux.org&#x2F;paru.git
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; paru
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;makepkg -si
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;I would also change some options so it is actually usuable.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo vim &#x2F;etc&#x2F;pacman.conf&lt;&#x2F;code&gt; - Uncommenting &lt;code&gt;Color&lt;&#x2F;code&gt; and &lt;code&gt;ParallelDownloads = 5&lt;&#x2F;code&gt; and changing it to &lt;code&gt;ParallelDownloads = 15&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo vim &#x2F;etc&#x2F;paru.conf&lt;&#x2F;code&gt; - Uncommenting &lt;code&gt;BottomUp&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;auto-mounting-drives-on-boot&quot;&gt;Auto-mounting drives on boot&lt;&#x2F;h2&gt;
+&lt;p&gt;First lets open the terminal and type &lt;code&gt;lsblk -f&lt;&#x2F;code&gt;. This will list all the disks &amp;amp; partitions connected along with their UUID.
+Select your disk of choice and copy the UUID from the terminal by using &lt;code&gt;LCtrl + LShift + c&lt;&#x2F;code&gt;. Also make note of the partition
+and open &lt;code&gt;sudo vim &#x2F;etc&#x2F;fstab&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;... &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# &amp;lt;-- These are already present drives. If the file is empty, you have not installed arch properly!
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# &#x2F;dev&#x2F;sdb1 -&amp;gt; replace sdb1 with your partition name
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;UUID&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;paste &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;your&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; UUID here&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;     &#x2F;mnt&#x2F;hdd ntfs defaults 0 2
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#    ^ paste using Ctrl+Shift+v  ^this must be an empty directory
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# replace ntfs with your drive&amp;#39;s format. and leave the rest the same
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Check whether your fstab file is valid by using &lt;code&gt;sudo mount --fake -a&lt;&#x2F;code&gt; and then &lt;code&gt;sudo mount -a&lt;&#x2F;code&gt; if there are no errors.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bluetooth&quot;&gt;Bluetooth&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;advanced&quot;&gt;Advanced&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you want to change your kernel refer to this [guide&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;theming&quot;&gt;Theming&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the &lt;code&gt;lxappearance&lt;&#x2F;code&gt; package to manage gtk themes. You might want to install &lt;code&gt;arc-gtk-theme&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Use the &lt;code&gt;qt5ct&lt;&#x2F;code&gt; package to manage qt themes.You need to add &lt;code&gt;QT_QPA_PLATFORMTHEME=qt5ct&lt;&#x2F;code&gt; to &lt;code&gt;&#x2F;etc&#x2F;environment&lt;&#x2F;code&gt; and re-login&#x2F;reboot. You might want to install &lt;code&gt;breeze&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;changing-keyboard-layout-and-mouse-acceleration&quot;&gt;Changing keyboard layout and mouse acceleration&lt;&#x2F;h2&gt;
+&lt;p&gt;You&#x27;ll need to create this section to the given file. Replace &lt;code&gt;gb&lt;&#x2F;code&gt; with your layout.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo vim &#x2F;etc&#x2F;X11&#x2F;xorg.conf.d&#x2F;00-keyboard.conf&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;conf&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-conf &quot;&gt;&lt;code class=&quot;language-conf&quot; data-lang=&quot;conf&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Section &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;InputClass&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Identifier &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;system-keyboard&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Option &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;XkbLayout&amp;quot; &amp;quot;gb&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Option &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;XkbModel&amp;quot; &amp;quot;pc104&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;EndSection
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Mouse acceleration can be disabled by the following config.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo vim &#x2F;etc&#x2F;X11&#x2F;xorg.conf.d&#x2F;50-mouse-acceleration.conf&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;conf&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-conf &quot;&gt;&lt;code class=&quot;language-conf&quot; data-lang=&quot;conf&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Section &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;InputClass&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Identifier &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;My Mouse&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Driver &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;libinput&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;MatchIsPointer &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;yes&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Option &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;AccelProfile&amp;quot; &amp;quot;flat&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Option &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;AccelSpeed&amp;quot; &amp;quot;0&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;EndSection
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;services&quot;&gt;Services&lt;&#x2F;h2&gt;
+&lt;p&gt;A service is a program that runs in the background&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;some-commands&quot;&gt;Some commands&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl start &amp;lt;service_name&amp;gt;&lt;&#x2F;code&gt;: to start a service&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl enable --now &amp;lt;service_name&amp;gt;&lt;&#x2F;code&gt;: starts the service but also makes sure it is running when you turn your computer on &#x2F; log in. If you don&#x27;t need the service to run&#x2F;start right now, you can omit the &lt;code&gt;--now&lt;&#x2F;code&gt; flag.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl stop &amp;lt;service_name&amp;gt;&lt;&#x2F;code&gt;: to stop a running service.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl disable &amp;lt;service_name&amp;gt;:&lt;&#x2F;code&gt; Stop a service from running on startup.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;some-commands-that-are-useful-for-debegging&quot;&gt;Some commands that are useful for debegging:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl | grep running&lt;&#x2F;code&gt; : see all the services that are running.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl list-unit-files | grep enabled&lt;&#x2F;code&gt;: see the enabled services&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;applications&quot;&gt;Applications&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;using-a-wm&quot;&gt;Using a WM&lt;&#x2F;h2&gt;
+&lt;p&gt;Some application such as JetBrains IDE&#x27;s don&#x27;t work properly on window managers. To fix this
+run this command, or add it to your autostart file.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;_JAVA_AWT_WM_NONREPARENTING&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;AWT_TOOLKIT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;MToolkit
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;wmname&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; LG3D
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;running-windows-applications&quot;&gt;Running windows applications&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;microsoft-and-adobe-apps&quot;&gt;Microsoft and Adobe apps&lt;&#x2F;h3&gt;
+&lt;p&gt;I use winapps to run Microsoft Office, Visual studio and Adobe creative cloud apps.
+For this refer to the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Fmstrat&#x2F;winapps&quot;&gt;winapps repository&lt;&#x2F;a&gt;. &lt;&#x2F;p&gt;
+&lt;h3 id=&quot;running-standalone-exe-files&quot;&gt;Running Standalone &#x27;exe&#x27; files&lt;&#x2F;h3&gt;
+&lt;p&gt;For running any small applications, I use bottles which is available in flathub &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;com.usebottles.bottles&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;terminal-and-bash-scripting&quot;&gt;Terminal and bash scripting&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;commands&quot;&gt;Commands&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ls&lt;&#x2F;code&gt;: lists subdirectories or files in your current directory&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;pwd&lt;&#x2F;code&gt;: gives your current directory&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;cat &amp;lt;file&amp;gt;&lt;&#x2F;code&gt;: Outputs the contents of the file onto the terminal. Used to look at the contents of a file without opening it.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;cd &amp;lt;target_directory&amp;gt;&lt;&#x2F;code&gt;: Changes your current directory to the the specified target directory. The target directory must be in your current working folder&#x2F;directory. You can check this by typing the &lt;code&gt;ls&lt;&#x2F;code&gt; command.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;grep &amp;quot;&amp;lt;string&amp;gt;&amp;quot; &amp;lt;file&amp;gt;&lt;&#x2F;code&gt; : This is the most basic usage of grep, for more flags&#x2F;options, see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.man7.org&#x2F;linux&#x2F;man-pages&#x2F;man1&#x2F;grep.1.html&quot;&gt;here&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.howtogeek.com&#x2F;496056&#x2F;how-to-use-the-grep-command-on-linux&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;. Some usage flags include: &lt;code&gt;-i&lt;&#x2F;code&gt; : ignore case, &lt;code&gt;-H&lt;&#x2F;code&gt; : with file name (prints file name where each match is found), &lt;code&gt;-L&lt;&#x2F;code&gt; stops at first match.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;touch &amp;lt;file&amp;gt;&lt;&#x2F;code&gt;: can be used to create a file in the current working directory, or in the directory provided like this -&amp;gt; &lt;code&gt;touch &amp;lt;path_to_file&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sed&lt;&#x2F;code&gt; : Extremely powerful tool, Sed, the ultimate stream editor. We can substitute words(like find and replace tool) using regex and so much more. Some examples would be:&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sed -i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;s&#x2F;old&#x2F;new&#x2F;g&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; file
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This would replace &amp;quot;old&amp;quot; with &amp;quot;new&amp;quot; for all occurrence&#x27;s in file. For information on sed can be found &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.grymoire.com&#x2F;Unix&#x2F;Sed.html&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;command1&amp;gt;|&amp;lt;command2&amp;gt;&lt;&#x2F;code&gt;: The pipe command transfers the output of a given command (Here output of command1 is transferred to command2). For example if I wanted to transfer&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;&amp;gt;&lt;&#x2F;code&gt;  and &lt;code&gt;&amp;gt;&amp;gt;&lt;&#x2F;code&gt;:  The  &#x27;&amp;gt;&#x27; operator overwrites the existing file, or creates the file if file mentioned cannot be found. The &#x27;&amp;gt;&amp;gt;&#x27; operator appends to the existing file, or creates the file if file does not exist. See script below. Usage of the operators would be :&lt;code&gt;{command_with_output} &amp;gt; file&lt;&#x2F;code&gt; . Here is an example of a simple shell script.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#!&#x2F;usr&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# This is script I wrote that will append the given data to the file logger.md
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-n &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;Enter line to be appended: &amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; userinput
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;userinput&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;Documents&#x2F;logger.md
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;bash-scripting&quot;&gt;Bash scripting&lt;&#x2F;h2&gt;
+&lt;p&gt;Basic shell script examples.&lt;&#x2F;p&gt;
+&lt;p&gt;The first script takes your height and appends to a height tracking markdown file. The first line &lt;code&gt;#!&#x2F;bin&#x2F;bash&lt;&#x2F;code&gt; indicates
+that it is a bash script.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# takes input
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-n &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;Enter height: &amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; height
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; +&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;%d&#x2F;%m&#x2F;%Y&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# The output must be in table format in markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;| $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; | $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;height&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; |&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;Documents&#x2F;heightLogger.md
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Or we could have it take one argument&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; +&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;%d&#x2F;%m&#x2F;%Y&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# The output must be in table format in markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;| $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; | $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; |&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;Documents&#x2F;heightLogger.md
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now we can add some additional checks to it&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;[ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-z &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;then
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;First argument required (your height)&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;else
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; +&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;%d&#x2F;%m&#x2F;%Y&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# The output must be in table format in markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;| $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; | $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; |&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;Documents&#x2F;heightLogger.md
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;fi
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now we can set an alias or make our file and executable to use it.&lt;&#x2F;p&gt;
+&lt;p&gt;TODO&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>File Organizer</title>
+            <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/file-organizer/</link>
+            <guid>https://hegdeatri.com/projects/file-organizer/</guid>
+            <description>&lt;h1 id=&quot;file-organizer-github&quot;&gt;File Organizer &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;FileOrganizer&quot;&gt;(GitHub)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;A C# application written using the Avalonia framework. It was made when I had recovered over 2TB of data from a hard drive all into one folder.&lt;&#x2F;p&gt;
+&lt;p&gt;This application organizes files in a folder based on specified options.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;preview&quot;&gt;Preview&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;fileorganizer-preview.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-to-use&quot;&gt;How to use&lt;&#x2F;h2&gt;
+&lt;p&gt;You can download the application from the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;FileOrganizer&#x2F;releases&quot;&gt;releases page.&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;You select the source and target paths by clicking on the select folder button below their label.&lt;&#x2F;li&gt;
+&lt;li&gt;If you want to sort all files in the source path, leave file type empty. If you want to only sort 1 type of file, then type its extension in the file type box. Example: &amp;quot;.jpg&amp;quot;&lt;&#x2F;li&gt;
+&lt;li&gt;You can organize by the month and year, or only the year of the file taken from the last modified metadata property. If None is selected, the selected file type will just be moved to Target path.&lt;&#x2F;li&gt;
+&lt;li&gt;Scan subfolder:  checks for files inside of folders in the source path.&lt;&#x2F;li&gt;
+&lt;li&gt;Auto detect subfolders: creates folders at the target path for every extension it finds.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Then press Organize, you should be able to see the progress in the progress bar and its percentage right above it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;disclaimer&quot;&gt;Disclaimer&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There is not enough validation checks so make sure to test it with small sample to see if it works as intended.&lt;&#x2F;li&gt;
+&lt;li&gt;I do not know how to package MacOS&#x27; release files, so it most probably will not work on macOS.&lt;&#x2F;li&gt;
+&lt;li&gt;If moving fails, then your files should be safe. Some will be in the target path, and the rest in the source path (the failed to move files.)
+If this happens, please send me the Exception.txt file created in the target path.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>hegdeatri-dot-com</title>
+            <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/hegdeatri-dot-com/</link>
+            <guid>https://hegdeatri.com/projects/hegdeatri-dot-com/</guid>
+            <description>&lt;h1 id=&quot;personal-website-github&quot;&gt;Personal website &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hegdeatri.com&quot;&gt;(GitHub)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;After a trying out a bunch different frameworks including - yew, blazor, angular and gatsby, I have decided 
+to use zola for my website. Reasons being:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Its very easy to update and add new stuff in markdown.&lt;&#x2F;li&gt;
+&lt;li&gt;Very fast.&lt;&#x2F;li&gt;
+&lt;li&gt;Can build upon an already existing theme, and its templates.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;After reading through some excellent docs at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;overview&#x2F;&quot;&gt;getzola.org&lt;&#x2F;a&gt;,
+I chose my theme of choice which was &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;deepthought&#x2F;&quot;&gt;DeepThought&lt;&#x2F;a&gt;, and started hacking away at
+the config.toml and make my own template for the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hegdeatri.com&#x2F;about&quot;&gt;about page&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I plan on making a video that will walk through setting up a small website on my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCHZwj1GpsDQ3B9S5VjeY36A&quot;&gt;youtube channel&lt;&#x2F;a&gt; sometime in the future.&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Meeting Booking</title>
+            <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/meeting-booking/</link>
+            <guid>https://hegdeatri.com/projects/meeting-booking/</guid>
+            <description>&lt;h1 id=&quot;meeting-booker-github&quot;&gt;Meeting Booker &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;meetingBooking&quot;&gt;(GitHub)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Cleaner&#x27;s and caterer&#x27;s dashboard can be viewed from the admin panel&lt;&#x2F;li&gt;
+&lt;li&gt;Only Admin&#x27;s can create new Admin accounts.&lt;&#x2F;li&gt;
+&lt;li&gt;For demo purposes, the default Admin account has the username -  &amp;quot;owner&amp;quot; and password - &amp;quot;hello&amp;quot;. (excluding the quotation marks.)&lt;&#x2F;li&gt;
+&lt;li&gt;Timetables are automatically generated (for cleaners and caterers).&lt;&#x2F;li&gt;
+&lt;li&gt;If you want to make it so that the user will be able to book for more than one day, the database is already compatible with this, therefore the only parts needed to change is the logic for booking rooms, and scheduling catering services.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;objectives&quot;&gt;Objectives&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Add the ability to edit bookings.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Catering Dashboard.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Cleaners Dashboard.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Automatically schedules cleaners after the room has been vacated. &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Automatically does not allow you to add refreshments at the same time as others.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Customer cannot book &#x27;occupied&#x27; rooms and cannot book unless room has been serviced.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Customer Page verifies email format.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Duplicate user accounts verification&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Password hashing.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+&lt;del&gt;Customer requests for room, and Admins approve the requests.&lt;&#x2F;del&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+&lt;del&gt;Greyed out buttons when room is unavailable.&lt;&#x2F;del&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Stylize UI + Add tooltips.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;known-mistakes-will-be-fixed-if-project-needs-updating&quot;&gt;Known mistakes (will be fixed if project needs updating)&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Admin creation is mostly duplicate code from the register package, will fix soon&lt;&#x2F;li&gt;
+&lt;li&gt;Displays incorrect error message when trying to book a room.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;a-few-shortcomings-to-take-note-of&quot;&gt;A few shortcomings to take note of&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Foreign keys are not used! This means carelessly deleting customer accounts might lead to errors in booking timings for any bookings they have made in the future.&lt;&#x2F;li&gt;
+&lt;li&gt;Users privilege structure means that you need to be an admin to access the cleaner&#x27;s and catering timetable. This a security issue!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;the-specifications-for-this-program-are-as-follows&quot;&gt;The specifications for this program are as follows:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;There are 5 different rooms, all with different sizes of how many people the room can accommodate.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Room number&lt;&#x2F;th&gt;&lt;th&gt;Accommodation size&lt;&#x2F;th&gt;&lt;th&gt;Disabled Access&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Room 1&lt;&#x2F;td&gt;&lt;td&gt;2 people&lt;&#x2F;td&gt;&lt;td&gt;false&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Room 2&lt;&#x2F;td&gt;&lt;td&gt;4 people&lt;&#x2F;td&gt;&lt;td&gt;false&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Room 3&lt;&#x2F;td&gt;&lt;td&gt;8 people&lt;&#x2F;td&gt;&lt;td&gt;false&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Room 4&lt;&#x2F;td&gt;&lt;td&gt;15 people&lt;&#x2F;td&gt;&lt;td&gt;true&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Room 5&lt;&#x2F;td&gt;&lt;td&gt;50 people&lt;&#x2F;td&gt;&lt;td&gt;false&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;ul&gt;
+&lt;li&gt;Users of this system will be able to book a meeting room for a certain date and time slot.
+Two different users should not be able to book the same room at the same time and date slot.
+(no double bookings). You can choose how long the times slots are (people might&#x2F;might not need the room for the whole day)&lt;&#x2F;li&gt;
+&lt;li&gt;Along with the meeting room, a user can request for a selection of resources to be in the room for their meeting (e.g a projector, pens, paper)&lt;&#x2F;li&gt;
+&lt;li&gt;The user can also request refreshments to be delivered to their booked room at certain times(e.g. pastry, sandwich, water, drinks).
+You can book multiple refreshments for the same room at different times(e.g. pastry in the morning, coffee in the evening)&lt;&#x2F;li&gt;
+&lt;li&gt;The catering staff should be able to see a list of which rooms need which refreshments in time of order of when they need to deliver
+the refreshments. The catering staff have only 1 person who can deliver, therefore they cannot deliver to 2 rooms at the same time.
+-The rooms need to be cleaned between bookings. There is only 1 cleaner. You should be able to generate a cleaning schedule for them(each room takes about 30 minutes to clean).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;additional-requirements&quot;&gt;Additional requirements&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Users will have to use an email to register a booking. Verify that the email is given in the correct format.&lt;&#x2F;li&gt;
+&lt;li&gt;Show the user the list of available rooms&#x2F; available timeslots in sorted order.&lt;&#x2F;li&gt;
+&lt;li&gt;A user should not be able to book 2 meeting rooms for the same time and date slot.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;notes-to-be-taken-from-this-project&quot;&gt;Notes to be taken from this project&lt;&#x2F;h3&gt;
+&lt;p&gt;Some pointers so that I have a project plan next time before I start a project&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Before starting the project, make a class diagram, and a dataflow diagram.&lt;&#x2F;li&gt;
+&lt;li&gt;Think of the solution for the problem before you start to code.&lt;&#x2F;li&gt;
+&lt;li&gt;Planned coding, as in code in the right order so that testing is smoother.&lt;&#x2F;li&gt;
+&lt;li&gt;With no project plan, the project gets very sluggish after a few days.&lt;&#x2F;li&gt;
+&lt;li&gt;Planning and then coding = 1000x faster.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+    </channel>
+</rss>

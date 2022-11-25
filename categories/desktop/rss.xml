@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Atri Hegde - Desktop</title>
+        <link>https://hegdeatri.com</link>
+        <description>A simple blog theme focused on writing powered by Bulma and Zola</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://hegdeatri.com/categories/desktop/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>Warehouse Management</title>
+            <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/warehouse-management/</link>
+            <guid>https://hegdeatri.com/projects/warehouse-management/</guid>
+            <description>&lt;h1 id=&quot;warehouse-management&quot;&gt;Warehouse Management&lt;&#x2F;h1&gt;
+&lt;p&gt;This project is currently in the planning phase!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;current-problems-analysis&quot;&gt;Current problems + Analysis&lt;&#x2F;h2&gt;
+&lt;p&gt;There are no free warehouse management software that is tested for exploits, or can be written in unsafe code.
+My goal for this project is to build a reliable application that can be used on a daily basis.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;plan&quot;&gt;Plan&lt;&#x2F;h2&gt;
+&lt;p&gt;My project will include two Stages, getting a desktop app working with a backend database, and then getting
+a website working that can be used for customers&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;stage-1&quot;&gt;Stage 1&lt;&#x2F;h3&gt;
+&lt;p&gt;Cross-platform desktop app that can be used by staff&#x2F;internal use only.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;stage-2&quot;&gt;Stage 2&lt;&#x2F;h3&gt;
+&lt;p&gt;A website that can be used by customers to order your goods.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;&#x2F;h2&gt;
+&lt;p&gt;I am considering using either Avalonia UI or .NET MAUI frameworks as both provide me with a single codebase for all platforms (mobile + desktop + web).
+Unfortunately .NET MAUI, the framework I wanted to use does not support Linux.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;build&quot;&gt;Build&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;testing&quot;&gt;Testing&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;maintainance&quot;&gt;Maintainance&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;extra&quot;&gt;Extra&lt;&#x2F;h2&gt;
+&lt;p&gt;If you want to use this software in a professional setting, and would like addition of specific
+features&#x2F;compatability (example: support for ARM devices with NFC login) get in contact with me through my email: &lt;a href=&quot;mailto:atri@hegdeatri.com&quot;&gt;atri@hegdeatri.com&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Pricing for support coming soon.&lt;&#x2F;p&gt;
+</description>
+        </item>
+    </channel>
+</rss>

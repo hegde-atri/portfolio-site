@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Atri Hegde - C#</title>
+        <link>https://hegdeatri.com</link>
+        <description>A simple blog theme focused on writing powered by Bulma and Zola</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://hegdeatri.com/categories/c/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>File Organizer</title>
+            <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/file-organizer/</link>
+            <guid>https://hegdeatri.com/projects/file-organizer/</guid>
+            <description>&lt;h1 id=&quot;file-organizer-github&quot;&gt;File Organizer &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;FileOrganizer&quot;&gt;(GitHub)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;A C# application written using the Avalonia framework. It was made when I had recovered over 2TB of data from a hard drive all into one folder.&lt;&#x2F;p&gt;
+&lt;p&gt;This application organizes files in a folder based on specified options.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;preview&quot;&gt;Preview&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;fileorganizer-preview.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-to-use&quot;&gt;How to use&lt;&#x2F;h2&gt;
+&lt;p&gt;You can download the application from the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;FileOrganizer&#x2F;releases&quot;&gt;releases page.&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;You select the source and target paths by clicking on the select folder button below their label.&lt;&#x2F;li&gt;
+&lt;li&gt;If you want to sort all files in the source path, leave file type empty. If you want to only sort 1 type of file, then type its extension in the file type box. Example: &amp;quot;.jpg&amp;quot;&lt;&#x2F;li&gt;
+&lt;li&gt;You can organize by the month and year, or only the year of the file taken from the last modified metadata property. If None is selected, the selected file type will just be moved to Target path.&lt;&#x2F;li&gt;
+&lt;li&gt;Scan subfolder:  checks for files inside of folders in the source path.&lt;&#x2F;li&gt;
+&lt;li&gt;Auto detect subfolders: creates folders at the target path for every extension it finds.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Then press Organize, you should be able to see the progress in the progress bar and its percentage right above it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;disclaimer&quot;&gt;Disclaimer&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There is not enough validation checks so make sure to test it with small sample to see if it works as intended.&lt;&#x2F;li&gt;
+&lt;li&gt;I do not know how to package MacOS&#x27; release files, so it most probably will not work on macOS.&lt;&#x2F;li&gt;
+&lt;li&gt;If moving fails, then your files should be safe. Some will be in the target path, and the rest in the source path (the failed to move files.)
+If this happens, please send me the Exception.txt file created in the target path.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+    </channel>
+</rss>

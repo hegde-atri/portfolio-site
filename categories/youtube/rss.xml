@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Atri Hegde - Youtube</title>
+        <link>https://hegdeatri.com</link>
+        <description>A simple blog theme focused on writing powered by Bulma and Zola</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://hegdeatri.com/categories/youtube/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>Make your own website! ft. Zola</title>
+            <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/first-website-tutorial/</link>
+            <guid>https://hegdeatri.com/posts/first-website-tutorial/</guid>
+            <description>&lt;h1 id=&quot;make-your-own-website-ft-zola&quot;&gt;Make your own website ! ft. Zola&lt;&#x2F;h1&gt;
+&lt;p&gt;Zola is a static site generator, that uses templates to transform your content into static
+html pages. This means that development can be simple and quick, while also being easily modifiable.
+This site was built using Zola! It is incredibly easy to add posts&#x2F;projects and extend the site with more
+sections if needed. In this post, I will go through how to setup a website project using Zola.&lt;&#x2F;p&gt;
+&lt;p&gt;Zola also has &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;overview&quot;&gt;excellent documentation&lt;&#x2F;a&gt; that you should check out if you choose to use it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;installing-zola&quot;&gt;Installing Zola&lt;&#x2F;h2&gt;
+&lt;p&gt;You can install zola on your system by referring to their &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;installation&#x2F;&quot;&gt;installation guide&lt;&#x2F;a&gt;.
+If you are using Arch Linux, you can simply install the zola package.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; zola
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;creating-your-project&quot;&gt;Creating your project&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;choosing-theme&quot;&gt;Choosing theme&lt;&#x2F;h2&gt;
+&lt;p&gt;One of the best options that comes with zola is to use one of many themes that users have created.
+You can view the themes on their &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;&quot;&gt;website&lt;&#x2F;a&gt;. This
+makes creating our website much more simpler as we do not have to worry about writing CSS for our site
+(CSS is way of styling a webpage). I have chosen the &lt;&#x2F;p&gt;
+</description>
+        </item>
+    </channel>
+</rss>

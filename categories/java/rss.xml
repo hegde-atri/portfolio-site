@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Atri Hegde - Java</title>
+        <link>https://hegdeatri.com</link>
+        <description>A simple blog theme focused on writing powered by Bulma and Zola</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://hegdeatri.com/categories/java/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>Meeting Booking</title>
+            <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/meeting-booking/</link>
+            <guid>https://hegdeatri.com/projects/meeting-booking/</guid>
+            <description>&lt;h1 id=&quot;meeting-booker-github&quot;&gt;Meeting Booker &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;meetingBooking&quot;&gt;(GitHub)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Cleaner&#x27;s and caterer&#x27;s dashboard can be viewed from the admin panel&lt;&#x2F;li&gt;
+&lt;li&gt;Only Admin&#x27;s can create new Admin accounts.&lt;&#x2F;li&gt;
+&lt;li&gt;For demo purposes, the default Admin account has the username -  &amp;quot;owner&amp;quot; and password - &amp;quot;hello&amp;quot;. (excluding the quotation marks.)&lt;&#x2F;li&gt;
+&lt;li&gt;Timetables are automatically generated (for cleaners and caterers).&lt;&#x2F;li&gt;
+&lt;li&gt;If you want to make it so that the user will be able to book for more than one day, the database is already compatible with this, therefore the only parts needed to change is the logic for booking rooms, and scheduling catering services.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;objectives&quot;&gt;Objectives&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Add the ability to edit bookings.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Catering Dashboard.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Cleaners Dashboard.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Automatically schedules cleaners after the room has been vacated. &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Automatically does not allow you to add refreshments at the same time as others.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Customer cannot book &#x27;occupied&#x27; rooms and cannot book unless room has been serviced.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Customer Page verifies email format.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Duplicate user accounts verification&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Password hashing.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+&lt;del&gt;Customer requests for room, and Admins approve the requests.&lt;&#x2F;del&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+&lt;del&gt;Greyed out buttons when room is unavailable.&lt;&#x2F;del&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+Stylize UI + Add tooltips.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;known-mistakes-will-be-fixed-if-project-needs-updating&quot;&gt;Known mistakes (will be fixed if project needs updating)&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Admin creation is mostly duplicate code from the register package, will fix soon&lt;&#x2F;li&gt;
+&lt;li&gt;Displays incorrect error message when trying to book a room.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;a-few-shortcomings-to-take-note-of&quot;&gt;A few shortcomings to take note of&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Foreign keys are not used! This means carelessly deleting customer accounts might lead to errors in booking timings for any bookings they have made in the future.&lt;&#x2F;li&gt;
+&lt;li&gt;Users privilege structure means that you need to be an admin to access the cleaner&#x27;s and catering timetable. This a security issue!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;the-specifications-for-this-program-are-as-follows&quot;&gt;The specifications for this program are as follows:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;There are 5 different rooms, all with different sizes of how many people the room can accommodate.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Room number&lt;&#x2F;th&gt;&lt;th&gt;Accommodation size&lt;&#x2F;th&gt;&lt;th&gt;Disabled Access&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Room 1&lt;&#x2F;td&gt;&lt;td&gt;2 people&lt;&#x2F;td&gt;&lt;td&gt;false&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Room 2&lt;&#x2F;td&gt;&lt;td&gt;4 people&lt;&#x2F;td&gt;&lt;td&gt;false&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Room 3&lt;&#x2F;td&gt;&lt;td&gt;8 people&lt;&#x2F;td&gt;&lt;td&gt;false&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Room 4&lt;&#x2F;td&gt;&lt;td&gt;15 people&lt;&#x2F;td&gt;&lt;td&gt;true&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Room 5&lt;&#x2F;td&gt;&lt;td&gt;50 people&lt;&#x2F;td&gt;&lt;td&gt;false&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;ul&gt;
+&lt;li&gt;Users of this system will be able to book a meeting room for a certain date and time slot.
+Two different users should not be able to book the same room at the same time and date slot.
+(no double bookings). You can choose how long the times slots are (people might&#x2F;might not need the room for the whole day)&lt;&#x2F;li&gt;
+&lt;li&gt;Along with the meeting room, a user can request for a selection of resources to be in the room for their meeting (e.g a projector, pens, paper)&lt;&#x2F;li&gt;
+&lt;li&gt;The user can also request refreshments to be delivered to their booked room at certain times(e.g. pastry, sandwich, water, drinks).
+You can book multiple refreshments for the same room at different times(e.g. pastry in the morning, coffee in the evening)&lt;&#x2F;li&gt;
+&lt;li&gt;The catering staff should be able to see a list of which rooms need which refreshments in time of order of when they need to deliver
+the refreshments. The catering staff have only 1 person who can deliver, therefore they cannot deliver to 2 rooms at the same time.
+-The rooms need to be cleaned between bookings. There is only 1 cleaner. You should be able to generate a cleaning schedule for them(each room takes about 30 minutes to clean).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;additional-requirements&quot;&gt;Additional requirements&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Users will have to use an email to register a booking. Verify that the email is given in the correct format.&lt;&#x2F;li&gt;
+&lt;li&gt;Show the user the list of available rooms&#x2F; available timeslots in sorted order.&lt;&#x2F;li&gt;
+&lt;li&gt;A user should not be able to book 2 meeting rooms for the same time and date slot.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;notes-to-be-taken-from-this-project&quot;&gt;Notes to be taken from this project&lt;&#x2F;h3&gt;
+&lt;p&gt;Some pointers so that I have a project plan next time before I start a project&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Before starting the project, make a class diagram, and a dataflow diagram.&lt;&#x2F;li&gt;
+&lt;li&gt;Think of the solution for the problem before you start to code.&lt;&#x2F;li&gt;
+&lt;li&gt;Planned coding, as in code in the right order so that testing is smoother.&lt;&#x2F;li&gt;
+&lt;li&gt;With no project plan, the project gets very sluggish after a few days.&lt;&#x2F;li&gt;
+&lt;li&gt;Planning and then coding = 1000x faster.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+    </channel>
+</rss>

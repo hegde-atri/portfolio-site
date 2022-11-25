@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Atri Hegde - Linux</title>
+        <link>https://hegdeatri.com</link>
+        <description>A simple blog theme focused on writing powered by Bulma and Zola</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://hegdeatri.com/categories/linux/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>hegde-arch</title>
+            <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/hegde-arch/</link>
+            <guid>https://hegdeatri.com/projects/hegde-arch/</guid>
+            <description>&lt;h1 id=&quot;hegde-arch-github&quot;&gt;hegde-arch &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;hegde-arch&quot;&gt;(Github)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;I have had enough hopping between different configs, colour-schemes, window managers and applications. Soon I will be starting university and will not have
+enough time to do any of the things I used to do, and have time to experiment with different software. I think I have gotten pretty comfortable
+using some of the software that I am using currently and therefore decided to start a repository for basically having everything I need.&lt;&#x2F;p&gt;
+&lt;p&gt;The deadline I have set for this is December 2022. It will be aesthetically pleasing (highly subjective) and have all the features I need to make my life easier.
+It will by no means be an iso. It will just a git repo that you can clone and use to install arch and my configs.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Arch Linux&lt;&#x2F;li&gt;
+&lt;li&gt;bspwm&lt;&#x2F;li&gt;
+&lt;li&gt;sxhkd&lt;&#x2F;li&gt;
+&lt;li&gt;polybar&lt;&#x2F;li&gt;
+&lt;li&gt;rofi&lt;&#x2F;li&gt;
+&lt;li&gt;eww (replacing polybar)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;&#x2F;h2&gt;
+&lt;p&gt;TOC&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;structure&quot;&gt;Structure&lt;&#x2F;h2&gt;
+&lt;p&gt;TOC&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Virtual machines on linux using QEMU&#x2F;KVM and virt-manager</title>
+            <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/virtual-machines-arch/</link>
+            <guid>https://hegdeatri.com/posts/virtual-machines-arch/</guid>
+            <description>&lt;h1 id=&quot;install-qemu-kvm-and-virt-manager&quot;&gt;Install QEMU&#x2F;KVM and virt-manager&lt;&#x2F;h1&gt;
+&lt;p&gt;Installing all the packages we need.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; qemu virt-manager archlinux-keyring virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables iptables libguestfs
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now lets start the KVM libvirt service&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; systemctl enable&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; --now&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; libvirtd.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Make sure libvirtd is running&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; systemctl status libvirtd.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now lets give permissions for our standard user to manage KVM.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; vim &#x2F;etc&#x2F;libvirt&#x2F;libvirtd.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now uncomment &lt;code&gt;unix_sock_group = &amp;quot;libvirt&amp;quot;&lt;&#x2F;code&gt; and &lt;code&gt;unix_sock_rw_perms = &amp;quot;0770&amp;quot;&lt;&#x2F;code&gt;.
+Now add your user to the libvirt group and restart the libvirt service.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; usermod&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -a -G&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; libvirt $(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;whoami&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;newgrp&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; libvirt
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; systemctl restart libvirtd.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;enabling-nested-virtualization&quot;&gt;Enabling Nested Virtualization&lt;&#x2F;h2&gt;
+&lt;p&gt;This allows you to run virtual machines inside virtual machines.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# Intel CPU
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; modprobe&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -r&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; kvm_intel
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; modprobe kvm_intel nested=1
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# AMD CPU
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; modprobe&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -r&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; kvm_amd
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; modprobe kvm_amd nested=1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To make this configuration persistant: &lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;options kvm-intel nested=1&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; tee &#x2F;etc&#x2F;modprobe.d&#x2F;kvm-intel.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# Intel CPU
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;systool -m&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; kvm_intel&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -v &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nested
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &#x2F;sys&#x2F;module&#x2F;kvm_intel&#x2F;parameters&#x2F;nested
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# AMD CPU
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;systool -m&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; kvm_amd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -v &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nested
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &#x2F;sys&#x2F;module&#x2F;kvm_amd&#x2F;parameters&#x2F;nested 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;common-issues&quot;&gt;Common Issues&lt;&#x2F;h2&gt;
+&lt;p&gt;If your network &lt;code&gt;default&lt;&#x2F;code&gt; is not enabled run &lt;code&gt;sudo virsh net-start default&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h1&gt;
+&lt;p&gt;Now you can install your virtual machines using virt-manager&lt;&#x2F;p&gt;
+</description>
+        </item>
+        <item>
+            <title>Arch Linux installer</title>
+            <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/arch-install/</link>
+            <guid>https://hegdeatri.com/projects/arch-install/</guid>
+            <description>&lt;h1 id=&quot;arch-linux-installer-github&quot;&gt;Arch Linux Installer &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;arch-install&quot;&gt;(GitHub)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Currently v2.0 of this script is in the making. Forgot to branch my commmits out, so if you want to use
+it please use &lt;code&gt;archinstall.sh.bak&lt;&#x2F;code&gt; file.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;improvements&quot;&gt;Improvements&lt;&#x2F;h2&gt;
+&lt;p&gt;Features that are coming to v2.0:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disk encryption.&lt;&#x2F;li&gt;
+&lt;li&gt;Option to have different partitions for &lt;code&gt;&#x2F;&lt;&#x2F;code&gt; and &lt;code&gt;&#x2F;home&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Maybe a TUI.&lt;&#x2F;li&gt;
+&lt;li&gt;My &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;.dotfiles&quot;&gt;arch config swapper&lt;&#x2F;a&gt; and also optionally my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;linux_things&#x2F;wallpapers&quot;&gt;wallpapers&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>Linux config script</title>
+            <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/arch-config/</link>
+            <guid>https://hegdeatri.com/projects/arch-config/</guid>
+            <description>&lt;h1 id=&quot;my-dotfiles-script-github&quot;&gt;My dotfiles script &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;.dotfiles&quot;&gt;(GitHub)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;After starting make multiple configs for multiple use cases, computers&#x2F;VM&#x27;s
+I&#x27;ve decided to make myself a script that allows me to switch between my configs,
+create a new config, or update a config all without the trouble of managing them manually.&lt;&#x2F;p&gt;
+&lt;p&gt;After scripting my &lt;a href=&quot;&#x2F;projects&#x2F;arch-install&#x2F;&quot;&gt;arch-install&lt;&#x2F;a&gt; I&#x27;ve gotten a lot more
+comfortable with bash scripting, although I wouldn&#x27;t bet on the quality its written in, as there is no 
+error checking or validation.&lt;&#x2F;p&gt;
+&lt;p&gt;Clone me: &lt;code&gt;git clone https:&#x2F;&#x2F;github.com&#x2F;hegde-atri&#x2F;.dotfiles ~&#x2F;.source&#x2F;dotfiles&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First run the firstrun.sh script &lt;code&gt;.&#x2F;firstrun.sh&lt;&#x2F;code&gt;. This installs any required fonts and packages.&lt;&#x2F;li&gt;
+&lt;li&gt;Then you can run the setup.sh script &lt;code&gt;.&#x2F;setup.sh&lt;&#x2F;code&gt;. You can exit the script at any time using &lt;code&gt;Ctrl-C&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Make sure that you have a &lt;code&gt;~&#x2F;.dotfiles&lt;&#x2F;code&gt; directory or else it will fail.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;To have this as a command from your shell, add an alias to your &lt;code&gt;.bashrc&lt;&#x2F;code&gt; file. (Example - &lt;code&gt;alias config-dots=&#x27;&#x2F;path&#x2F;to&#x2F;setup&#x27;&lt;&#x2F;code&gt;).
+If you have cloned the repo using the command above, then you can just
+use &lt;code&gt;alias config-dots=&#x27;$HOME&#x2F;.source&#x2F;dotfiles&#x2F;setup&#x27;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Feel free to use my script but in your own configs, but don&#x27;t forget to credit me ;).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;If you get an error make sure it has executible permissions &lt;code&gt;chmod +x &amp;lt;filename&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-it-works&quot;&gt;How it works&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;~&#x2F;.source&#x2F;dotfiles&lt;&#x2F;code&gt; - location of the repository with all your configs.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;~&#x2F;.dots_global&lt;&#x2F;code&gt; - directory will have all your global app configs. You may want to use global configs for bash, mpv, mpd, etc.
+Since they don&#x27;t really change much.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;~&#x2F;.dotfiles&lt;&#x2F;code&gt; - directory with specific configs to a rice. You will have configs of bspwm, sxhkd, polybar, etc.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;My script essentially manages moving, stowing and updating configs through a menu, removing the hassle of managing dots.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;dependencies&quot;&gt;Dependencies&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The bspwm&#x2F;sxhkd config relies on rofi config, and also custom scripts.&lt;&#x2F;li&gt;
+&lt;li&gt;custom scripts relies on pywal, pywalfox and also zathura-pywal.&lt;&#x2F;li&gt;
+&lt;li&gt;ranger config requires ueberzug.&lt;&#x2F;li&gt;
+&lt;li&gt;super + d, dictionary needs the didyoumean package intalled, either built from source or installed from the AUR.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;contributing&quot;&gt;Contributing&lt;&#x2F;h3&gt;
+&lt;p&gt;If you think you can improve this scripts: &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fork it.&lt;&#x2F;li&gt;
+&lt;li&gt;Create your branch.&lt;&#x2F;li&gt;
+&lt;li&gt;After your changes, make a pull request stating your changes, and your reasoning for them.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;dotfile-credits&quot;&gt;Dotfile credits&lt;&#x2F;h3&gt;
+&lt;p&gt;Here are the credits to some of the scripts&#x2F;configs used in the dotfiles themselves.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;If I have derived any custom scripts from already existing ones, credits mentioned in the file.&lt;&#x2F;li&gt;
+&lt;li&gt;one of the rofi configs is a modifed + themed version of rofi themes by adi1090x on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;adi1090x&#x2F;rofi&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;mpv config is from Tsuba&#x27;s config on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Tsubajashi&#x2F;mpv-settings&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Firefox config is using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;MrOtherGuy&#x2F;firefox-csshacks.git&quot;&gt;firefox-csshacks&lt;&#x2F;a&gt; by MrOtherGuy on github.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>Arch Linux Wiki</title>
+            <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/projects/arch-wiki/</link>
+            <guid>https://hegdeatri.com/projects/arch-wiki/</guid>
+            <description>&lt;h1 id=&quot;this-project-is-undergoing-major-changes-will-be-back-up-in-about-3-4-weeks&quot;&gt;This project is undergoing major changes, will be back up in about 3-4 weeks&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;improved spelling, fixing grammatical errors.&lt;&#x2F;li&gt;
+&lt;li&gt;Much better structure and headings to make it easier to use and navigate.&lt;&#x2F;li&gt;
+&lt;li&gt;There will be a copy here but also github docs page once complete.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Navigate through this page&#x2F;guide using the table of contents on the right.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;installation&quot;&gt;Installation&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;dual-booting&quot;&gt;Dual booting&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;code&gt;powercfg &#x2F;h off&lt;&#x2F;code&gt; - Run this command (in windows) to disable hibernation completely. This gets rid of hybrid boot, which can cause your hard drive to be read-only.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;configuration&quot;&gt;Configuration&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;network-manager&quot;&gt;Network Manager&lt;&#x2F;h2&gt;
+&lt;p&gt;If you are using an ethernet connection, you should just be connected to the internet. If not refer to the arch wiki.&lt;&#x2F;p&gt;
+&lt;p&gt;For connecting to a wifi networking using Network Manager.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nmcli radio wifi on &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#turns wifi on.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nmcli dev wifi list &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#list networks.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nmcli dev wifi connect &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;network-ssid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;--ask
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can check if your internet connection works by using ping - &lt;code&gt;ping gnu.org&lt;&#x2F;code&gt; and viewing active connections by using
+&lt;code&gt;nmcli con show&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;aur-helper&quot;&gt;AUR helper&lt;&#x2F;h2&gt;
+&lt;p&gt;Paru is my AUR helper of choice, written in rust and constantly updated. Check out the paru repository on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;morganamilo&#x2F;paru&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S --needed&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; base-devel
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; clone https:&#x2F;&#x2F;aur.archlinux.org&#x2F;paru.git
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; paru
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;makepkg -si
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;I would also change some options so it is actually usuable.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo vim &#x2F;etc&#x2F;pacman.conf&lt;&#x2F;code&gt; - Uncommenting &lt;code&gt;Color&lt;&#x2F;code&gt; and &lt;code&gt;ParallelDownloads = 5&lt;&#x2F;code&gt; and changing it to &lt;code&gt;ParallelDownloads = 15&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo vim &#x2F;etc&#x2F;paru.conf&lt;&#x2F;code&gt; - Uncommenting &lt;code&gt;BottomUp&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;auto-mounting-drives-on-boot&quot;&gt;Auto-mounting drives on boot&lt;&#x2F;h2&gt;
+&lt;p&gt;First lets open the terminal and type &lt;code&gt;lsblk -f&lt;&#x2F;code&gt;. This will list all the disks &amp;amp; partitions connected along with their UUID.
+Select your disk of choice and copy the UUID from the terminal by using &lt;code&gt;LCtrl + LShift + c&lt;&#x2F;code&gt;. Also make note of the partition
+and open &lt;code&gt;sudo vim &#x2F;etc&#x2F;fstab&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;... &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# &amp;lt;-- These are already present drives. If the file is empty, you have not installed arch properly!
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# &#x2F;dev&#x2F;sdb1 -&amp;gt; replace sdb1 with your partition name
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;UUID&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;paste &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;your&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; UUID here&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;     &#x2F;mnt&#x2F;hdd ntfs defaults 0 2
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#    ^ paste using Ctrl+Shift+v  ^this must be an empty directory
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# replace ntfs with your drive&amp;#39;s format. and leave the rest the same
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Check whether your fstab file is valid by using &lt;code&gt;sudo mount --fake -a&lt;&#x2F;code&gt; and then &lt;code&gt;sudo mount -a&lt;&#x2F;code&gt; if there are no errors.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bluetooth&quot;&gt;Bluetooth&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;advanced&quot;&gt;Advanced&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you want to change your kernel refer to this [guide&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;theming&quot;&gt;Theming&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the &lt;code&gt;lxappearance&lt;&#x2F;code&gt; package to manage gtk themes. You might want to install &lt;code&gt;arc-gtk-theme&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Use the &lt;code&gt;qt5ct&lt;&#x2F;code&gt; package to manage qt themes.You need to add &lt;code&gt;QT_QPA_PLATFORMTHEME=qt5ct&lt;&#x2F;code&gt; to &lt;code&gt;&#x2F;etc&#x2F;environment&lt;&#x2F;code&gt; and re-login&#x2F;reboot. You might want to install &lt;code&gt;breeze&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;changing-keyboard-layout-and-mouse-acceleration&quot;&gt;Changing keyboard layout and mouse acceleration&lt;&#x2F;h2&gt;
+&lt;p&gt;You&#x27;ll need to create this section to the given file. Replace &lt;code&gt;gb&lt;&#x2F;code&gt; with your layout.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo vim &#x2F;etc&#x2F;X11&#x2F;xorg.conf.d&#x2F;00-keyboard.conf&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;conf&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-conf &quot;&gt;&lt;code class=&quot;language-conf&quot; data-lang=&quot;conf&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Section &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;InputClass&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Identifier &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;system-keyboard&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Option &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;XkbLayout&amp;quot; &amp;quot;gb&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Option &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;XkbModel&amp;quot; &amp;quot;pc104&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;EndSection
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Mouse acceleration can be disabled by the following config.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;sudo vim &#x2F;etc&#x2F;X11&#x2F;xorg.conf.d&#x2F;50-mouse-acceleration.conf&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;conf&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-conf &quot;&gt;&lt;code class=&quot;language-conf&quot; data-lang=&quot;conf&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Section &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;InputClass&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Identifier &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;My Mouse&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Driver &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;libinput&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;MatchIsPointer &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;yes&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Option &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;AccelProfile&amp;quot; &amp;quot;flat&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Option &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;AccelSpeed&amp;quot; &amp;quot;0&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;EndSection
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;services&quot;&gt;Services&lt;&#x2F;h2&gt;
+&lt;p&gt;A service is a program that runs in the background&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;some-commands&quot;&gt;Some commands&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl start &amp;lt;service_name&amp;gt;&lt;&#x2F;code&gt;: to start a service&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl enable --now &amp;lt;service_name&amp;gt;&lt;&#x2F;code&gt;: starts the service but also makes sure it is running when you turn your computer on &#x2F; log in. If you don&#x27;t need the service to run&#x2F;start right now, you can omit the &lt;code&gt;--now&lt;&#x2F;code&gt; flag.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl stop &amp;lt;service_name&amp;gt;&lt;&#x2F;code&gt;: to stop a running service.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl disable &amp;lt;service_name&amp;gt;:&lt;&#x2F;code&gt; Stop a service from running on startup.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;some-commands-that-are-useful-for-debegging&quot;&gt;Some commands that are useful for debegging:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl | grep running&lt;&#x2F;code&gt; : see all the services that are running.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl list-unit-files | grep enabled&lt;&#x2F;code&gt;: see the enabled services&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;applications&quot;&gt;Applications&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;using-a-wm&quot;&gt;Using a WM&lt;&#x2F;h2&gt;
+&lt;p&gt;Some application such as JetBrains IDE&#x27;s don&#x27;t work properly on window managers. To fix this
+run this command, or add it to your autostart file.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;_JAVA_AWT_WM_NONREPARENTING&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;AWT_TOOLKIT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;MToolkit
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;wmname&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; LG3D
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;running-windows-applications&quot;&gt;Running windows applications&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;microsoft-and-adobe-apps&quot;&gt;Microsoft and Adobe apps&lt;&#x2F;h3&gt;
+&lt;p&gt;I use winapps to run Microsoft Office, Visual studio and Adobe creative cloud apps.
+For this refer to the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Fmstrat&#x2F;winapps&quot;&gt;winapps repository&lt;&#x2F;a&gt;. &lt;&#x2F;p&gt;
+&lt;h3 id=&quot;running-standalone-exe-files&quot;&gt;Running Standalone &#x27;exe&#x27; files&lt;&#x2F;h3&gt;
+&lt;p&gt;For running any small applications, I use bottles which is available in flathub &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;com.usebottles.bottles&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;terminal-and-bash-scripting&quot;&gt;Terminal and bash scripting&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;commands&quot;&gt;Commands&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ls&lt;&#x2F;code&gt;: lists subdirectories or files in your current directory&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;pwd&lt;&#x2F;code&gt;: gives your current directory&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;cat &amp;lt;file&amp;gt;&lt;&#x2F;code&gt;: Outputs the contents of the file onto the terminal. Used to look at the contents of a file without opening it.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;cd &amp;lt;target_directory&amp;gt;&lt;&#x2F;code&gt;: Changes your current directory to the the specified target directory. The target directory must be in your current working folder&#x2F;directory. You can check this by typing the &lt;code&gt;ls&lt;&#x2F;code&gt; command.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;grep &amp;quot;&amp;lt;string&amp;gt;&amp;quot; &amp;lt;file&amp;gt;&lt;&#x2F;code&gt; : This is the most basic usage of grep, for more flags&#x2F;options, see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.man7.org&#x2F;linux&#x2F;man-pages&#x2F;man1&#x2F;grep.1.html&quot;&gt;here&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.howtogeek.com&#x2F;496056&#x2F;how-to-use-the-grep-command-on-linux&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;. Some usage flags include: &lt;code&gt;-i&lt;&#x2F;code&gt; : ignore case, &lt;code&gt;-H&lt;&#x2F;code&gt; : with file name (prints file name where each match is found), &lt;code&gt;-L&lt;&#x2F;code&gt; stops at first match.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;touch &amp;lt;file&amp;gt;&lt;&#x2F;code&gt;: can be used to create a file in the current working directory, or in the directory provided like this -&amp;gt; &lt;code&gt;touch &amp;lt;path_to_file&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;sed&lt;&#x2F;code&gt; : Extremely powerful tool, Sed, the ultimate stream editor. We can substitute words(like find and replace tool) using regex and so much more. Some examples would be:&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sed -i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;s&#x2F;old&#x2F;new&#x2F;g&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; file
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This would replace &amp;quot;old&amp;quot; with &amp;quot;new&amp;quot; for all occurrence&#x27;s in file. For information on sed can be found &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.grymoire.com&#x2F;Unix&#x2F;Sed.html&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;command1&amp;gt;|&amp;lt;command2&amp;gt;&lt;&#x2F;code&gt;: The pipe command transfers the output of a given command (Here output of command1 is transferred to command2). For example if I wanted to transfer&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;&amp;gt;&lt;&#x2F;code&gt;  and &lt;code&gt;&amp;gt;&amp;gt;&lt;&#x2F;code&gt;:  The  &#x27;&amp;gt;&#x27; operator overwrites the existing file, or creates the file if file mentioned cannot be found. The &#x27;&amp;gt;&amp;gt;&#x27; operator appends to the existing file, or creates the file if file does not exist. See script below. Usage of the operators would be :&lt;code&gt;{command_with_output} &amp;gt; file&lt;&#x2F;code&gt; . Here is an example of a simple shell script.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#!&#x2F;usr&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# This is script I wrote that will append the given data to the file logger.md
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-n &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;Enter line to be appended: &amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; userinput
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;userinput&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;Documents&#x2F;logger.md
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;bash-scripting&quot;&gt;Bash scripting&lt;&#x2F;h2&gt;
+&lt;p&gt;Basic shell script examples.&lt;&#x2F;p&gt;
+&lt;p&gt;The first script takes your height and appends to a height tracking markdown file. The first line &lt;code&gt;#!&#x2F;bin&#x2F;bash&lt;&#x2F;code&gt; indicates
+that it is a bash script.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# takes input
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-n &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;Enter height: &amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; height
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; +&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;%d&#x2F;%m&#x2F;%Y&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# The output must be in table format in markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;| $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; | $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;height&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; |&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;Documents&#x2F;heightLogger.md
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Or we could have it take one argument&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; +&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;%d&#x2F;%m&#x2F;%Y&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# The output must be in table format in markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;| $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; | $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; |&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;Documents&#x2F;heightLogger.md
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now we can add some additional checks to it&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;[ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-z &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;then
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;First argument required (your height)&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;else
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; +&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;%d&#x2F;%m&#x2F;%Y&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;`
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# The output must be in table format in markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;| $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;currentDate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; | $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt; |&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;Documents&#x2F;heightLogger.md
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;fi
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now we can set an alias or make our file and executable to use it.&lt;&#x2F;p&gt;
+&lt;p&gt;TODO&lt;&#x2F;p&gt;
+</description>
+        </item>
+    </channel>
+</rss>

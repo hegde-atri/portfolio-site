@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Atri Hegde - Guide</title>
+        <link>https://hegdeatri.com</link>
+        <description>A simple blog theme focused on writing powered by Bulma and Zola</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://hegdeatri.com/categories/guide/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>Installing kernels in Arch Linux</title>
+            <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/installing-kernels-arch/</link>
+            <guid>https://hegdeatri.com/posts/installing-kernels-arch/</guid>
+            <description>&lt;h1 id=&quot;installing-kernels-in-arch-linux&quot;&gt;Installing kernels in Arch Linux&lt;&#x2F;h1&gt;
+&lt;p&gt;Messing around with gaming on linux, I found out that CS:GO, Team Fortress 2, and any games that used
+the source engine were particularly laggy. This issue seems to be fixed when I use the zen kernel. I will walk
+you through installing the zen kernel on Arch Linux.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;getting-the-required-modules&quot;&gt;Getting the required modules&lt;&#x2F;h2&gt;
+&lt;p&gt;We will need to install the kernel itself.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; linux-zen linux-zen-headers
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If you are using a nvidia graphics card, replace your nvidia (drivers) package with nvidia-dkms package.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pacman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -S&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; dkms nvidia-dkms
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;modifying-grub&quot;&gt;Modifying GRUB&lt;&#x2F;h2&gt;
+&lt;p&gt;Now we are gonna change the grub config to make it easier to use with multiple kernels.
+Lets open the grub config file using &lt;code&gt;sudo vim &#x2F;etc&#x2F;default&#x2F;grub&lt;&#x2F;code&gt;.
+Now modify the following properties (&lt;code&gt;GRUB_DEFAULT=saved&lt;&#x2F;code&gt; needs to added, isn&#x27;t already present)&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;GRUB_DEFAULT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;saved
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;GRUB_SAVEDDEFAULT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;GRUB_DISABLE_SUBMENU&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;y
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then to apply the changes regenerate your grub config using:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; grub-mkconfig&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &#x2F;boot&#x2F;grub&#x2F;grub.cfg
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;em&gt;The location of your grub config might vary!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Now you should be able to restart your computer and boot into your machine with the linux-zen kernel!
+Souce engine based games seem to run much better now and the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zen-kernel&#x2F;zen-kernel&quot;&gt;zen-kernel&lt;&#x2F;a&gt; is
+supposed to better for day to day use.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;issues&quot;&gt;Issues&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;booting&#x2F;logging in to a black screen: run &lt;code&gt;mkinitcpio -P&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+        </item>
+        <item>
+            <title>A neovim guide</title>
+            <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
+            <link>https://hegdeatri.com/posts/neovim-guide/</link>
+            <guid>https://hegdeatri.com/posts/neovim-guide/</guid>
+            <description>&lt;h1 id=&quot;a-neovim-guide&quot;&gt;A neovim guide&lt;&#x2F;h1&gt;
+&lt;p&gt;This is a guide to get you started using neovim, replacing your IDE. We are gonna be installing neovim on a linux machine,
+installing plugins and customizing it to our preference.&lt;&#x2F;p&gt;
+&lt;p&gt;I am still learning vim, but soon there will be a guide to make vim replace your IDE.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;configuration-file&quot;&gt;Configuration file&lt;&#x2F;h2&gt;
+&lt;p&gt;I used to use vim, without any plugins before this and am accustomed to typing &lt;code&gt;vim&lt;&#x2F;code&gt; in the terminal, so I set myself an alias in my bashrc file.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;...
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;alias &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;nvim&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;...
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The configuration file for neovim is located at &lt;code&gt;~&#x2F;.config&#x2F;nvim&#x2F;init.vim&lt;&#x2F;code&gt;. First let us configure some basic options for neovim.
+I am going to createe the directory and open &lt;code&gt;init.vim&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;mkdir -p ~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;.config&#x2F;nvim
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;vim ~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;.config&#x2F;nvim&#x2F;init.vim
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;My configuration so far: &lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;vim&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-vim &quot;&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;call &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;plug#begin&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;()
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Appearance
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;vim-airline&#x2F;vim-airline&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;ryanoasis&#x2F;vim-devicons&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;folke&#x2F;tokyonight.nvim&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;branch&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;main&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;vim-airline&#x2F;vim-airline-themes&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Utilities
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;sheerun&#x2F;vim-polyglot&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;jiangmiao&#x2F;auto-pairs&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;ap&#x2F;vim-css-color&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;preservim&#x2F;nerdtree&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Completion &#x2F; linters &#x2F; formatters
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Plug &amp;#39;neoclide&#x2F;coc.nvim&amp;#39;,  {&amp;#39;branch&amp;#39;: &amp;#39;master&amp;#39;, &amp;#39;do&amp;#39;: &amp;#39;yarn install&amp;#39;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;plasticboy&#x2F;vim-markdown&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;    &amp;quot; Git
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Plug &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;airblade&#x2F;vim-gitgutter&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;call &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;plug#end&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;() 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;These are the plugins I use&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vim-airline&lt;&#x2F;code&gt; - for the status bars&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-devicons&lt;&#x2F;code&gt; - provides icons&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;tokyonight.vim&lt;&#x2F;code&gt; &amp;amp; &lt;code&gt;vim-airline-themes&lt;&#x2F;code&gt; - themes&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-polygot&lt;&#x2F;code&gt; - language pack for vim&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;auto-pairs&lt;&#x2F;code&gt; - automatically pairs syntax&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-css-color&lt;&#x2F;code&gt; - hex values have colour background&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;nerdtree&lt;&#x2F;code&gt; - tree style file explorer&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-markdown&lt;&#x2F;code&gt; - markdown related features&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;vim-gitgutter&lt;&#x2F;code&gt; - git gutter&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;vim&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-vim &quot;&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Options
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; set background=dark
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; clipboard=unnamedplus
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; completeopt=noinsert,menuone,noselect
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; cursorline
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; hidden
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; inccommand=split
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; mouse=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;a
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; number
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; relativenumber
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; splitbelow splitright
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; title
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ttimeoutlen=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; wildmenu
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Tabs size
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set expandtab
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; shiftwidth=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;2
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; tabstop=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;2
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;filetype&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; plugin indent on
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;syntax on
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Italics
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;&amp;amp;t_ZH&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\e[3m&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;&amp;amp;t_ZR&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\e[23m&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;completeopt&lt;&#x2F;code&gt; - gives more IDE like suggestion menu&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;clipboard&lt;&#x2F;code&gt; - shared clipboard&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;hidden&lt;&#x2F;code&gt; - hides buffers&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;mouse&lt;&#x2F;code&gt; - mouse everywhere&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;number&lt;&#x2F;code&gt; &amp;amp; &lt;code&gt;relativenumber&lt;&#x2F;code&gt; - line numbers enabled, that are relative to current line&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;syntax detection based on filetype&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;and as such, the rest are self-explanatory. &lt;code&gt;&amp;quot; Italic&lt;&#x2F;code&gt; for better italics support, when italics not working.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;vim&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-vim &quot;&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Colours
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;colorscheme&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; tokyonight
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:airline_theme&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;base16_dracula&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:airline_powerline_fonts&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:airline&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;#extensions#tabline#enabled = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:tokyonight_style&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;night&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:tokyonight_italic_functions&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:tokyonight_sidebars&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = [ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;qf&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;vista_kind&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;terminal&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;packer&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Nerdtree
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; NERDTreeShowHidden=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-n&amp;gt; :NERDTree&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-t&amp;gt; :NERDTreeToggle&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-f&amp;gt; :NERDTreeFind&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Tabs
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-h&amp;gt; :tabprev&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;nnoremap &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&amp;lt;C-l&amp;gt; :tabnext&amp;lt;CR&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here I have set my &lt;code&gt;colorscheme&lt;&#x2F;code&gt;, configured &lt;code&gt;airline&lt;&#x2F;code&gt;and added some keybindings for navigating tabs and using NERDTree.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;vim&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-vim &quot;&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; For markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Disable math tex conceal feature
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:tex_conceal&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_math&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;&amp;quot; Markdown
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_folding_disabled&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_frontmatter&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_conceal&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;let &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;g:vim_markdown_fenced_languages&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;tsx=typescriptreact&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;These are the markdown plugin settings&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;workflow&quot;&gt;Workflow&lt;&#x2F;h2&gt;
+&lt;p&gt;I myself am still figuring out a good workflow coming from Jetbrains IDE&#x27;s. I have been using tabs on vim, by using the &lt;code&gt;:tabnew&lt;&#x2F;code&gt; command to create new tabs, selecting the required
+file using Nerdtree and switching between tabs using &lt;code&gt;:tabprev&lt;&#x2F;code&gt; and &lt;code&gt;:tabnext&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+</description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  <link href='&#x2F;icons&#x2F;site.webmanifest' rel="manifest" />
+  
+  
+  <link color="#5bbad5" href='&#x2F;icons&#x2F;safari-pinned-tab.svg' rel="mask-icon" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-16x16.png' rel="icon" sizes="16x16" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-32x32.png' rel="icon" sizes="32x32" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;apple-touch-icon.png' rel="apple-touch-icon" sizes="180x180" />
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" integrity="sha256-rTpdO0HXBCNpreAHcu6tB2Ppg515Vo+5GtYSsnNLz+8=" crossorigin="anonymous">
+  <link href="https://hegdeatri.com/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Atri Hegde | Installing kernels in Arch Linux
+
+  </title>
+
+  
+  
+  
+
+  
+</head>
+
+<body class="has-background-white" theme="light">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;hegdeatri.com">
+          <img src="&#x2F;images&#x2F;test-logo.png" alt="" style="max-height: 2.5rem !important; margin: 0.25rem;">
+
+          Atri Hegde</a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;">
+            Home
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;posts">
+            Posts
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;projects">
+            Projects
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;tags">
+            Tags
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;categories">
+            Categories
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;about">
+            About
+          </a>
+          
+          
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            Installing kernels in Arch Linux
+          </h1>
+          <p class="subtitle">How to install the zen kernel for arch linux.</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Atri Hegde published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2022-06-29">June 29, 2022</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>2 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>235 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+              
+<p>
+  Categories:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/categories/post/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>Post</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/categories/guide/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>Guide</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+              
+<p>
+  Tags:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/tags/arch-linux/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>Arch Linux</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/tags/kernel/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>Kernel</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <h1 id="installing-kernels-in-arch-linux">Installing kernels in Arch Linux</h1>
+<p>Messing around with gaming on linux, I found out that CS:GO, Team Fortress 2, and any games that used
+the source engine were particularly laggy. This issue seems to be fixed when I use the zen kernel. I will walk
+you through installing the zen kernel on Arch Linux.</p>
+<h2 id="getting-the-required-modules">Getting the required modules</h2>
+<p>We will need to install the kernel itself.</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> pacman</span><span style="color:#eb6772;"> -S</span><span style="color:#abb2bf;"> linux-zen linux-zen-headers
+</span></code></pre>
+<p>If you are using a nvidia graphics card, replace your nvidia (drivers) package with nvidia-dkms package.</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> pacman</span><span style="color:#eb6772;"> -S</span><span style="color:#abb2bf;"> dkms nvidia-dkms
+</span></code></pre>
+<h2 id="modifying-grub">Modifying GRUB</h2>
+<p>Now we are gonna change the grub config to make it easier to use with multiple kernels.
+Lets open the grub config file using <code>sudo vim /etc/default/grub</code>.
+Now modify the following properties (<code>GRUB_DEFAULT=saved</code> needs to added, isn't already present)</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">GRUB_DEFAULT</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">saved
+</span><span style="color:#eb6772;">GRUB_SAVEDDEFAULT</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">true
+</span><span style="color:#eb6772;">GRUB_DISABLE_SUBMENU</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">y
+</span></code></pre>
+<p>Then to apply the changes regenerate your grub config using:</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> grub-mkconfig</span><span style="color:#eb6772;"> -o</span><span style="color:#abb2bf;"> /boot/grub/grub.cfg
+</span></code></pre>
+<p><em>The location of your grub config might vary!</em></p>
+<p>Now you should be able to restart your computer and boot into your machine with the linux-zen kernel!
+Souce engine based games seem to run much better now and the <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/zen-kernel/zen-kernel">zen-kernel</a> is
+supposed to better for day to day use.</p>
+<h3 id="issues">Issues</h3>
+<ul>
+<li>booting/logging in to a black screen: run <code>mkinitcpio -P</code></li>
+</ul>
+
+          </div>
+        </article>
+      </div>
+      
+      <div class="column is-2 is-hidden-mobile">
+        <aside class="menu" style="position: sticky; top: 48px">
+          <p class="heading has-text-weight-bold">Contents</p>
+          <ul class="menu-list">
+            
+            <li>
+              <a id="link-installing-kernels-in-arch-linux" class="toc is-size-7 is-active"
+                href="https://hegdeatri.com/posts/installing-kernels-arch/#installing-kernels-in-arch-linux">
+                Installing kernels in Arch Linux
+              </a>
+              
+              <ul>
+                
+                <li>
+                  <a id="link-getting-the-required-modules" class="toc is-size-7" href="https://hegdeatri.com/posts/installing-kernels-arch/#getting-the-required-modules">
+                    Getting the required modules
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-modifying-grub" class="toc is-size-7" href="https://hegdeatri.com/posts/installing-kernels-arch/#modifying-grub">
+                    Modifying GRUB
+                  </a>
+                </li>
+                
+              </ul>
+              
+            </li>
+            
+          </ul>
+        </aside>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head" >
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+          
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;posts&#x2F;using-linux&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              What using Linux has taught me.
+            </a>
+          </div>
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;posts&#x2F;neovim-guide&#x2F;">
+              A neovim guide<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+            
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p>
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+
+  
+  
+  
+  
+  <script src="https://hegdeatri.com/elasticlunr.min.js"></script>
+  <script src="https://hegdeatri.com/search_index.en.js"></script><script src="https://hegdeatri.com/js/site.js"></script>
+
+  
+
+<script type="text/javascript">
+  const menuBarHeight = document.querySelector("nav.navbar").clientHeight;
+  const tocItems = document.querySelectorAll(".toc");
+  const navSections = new Array(tocItems.length);
+
+  tocItems.forEach((el, i) => {
+    let id = el.getAttribute("id").substring(5);
+    navSections[i] = document.getElementById(id);
+  })
+
+  function isVisible(tocIndex) {
+    const current = navSections[tocIndex];
+    const next = tocIndex < tocItems.length - 1 ? navSections[tocIndex + 1]
+      : document.querySelectorAll("section.section").item(1);
+
+    const c = current.getBoundingClientRect();
+    const n = next.getBoundingClientRect();
+    const h = (window.innerHeight || document.documentElement.clientHeight);
+
+    return (c.top <= h) && (n.top - menuBarHeight >= 0);
+  }
+
+  function activateIfVisible() {
+    for (b = true, i = 0; i < tocItems.length; i++) {
+      if (b && isVisible(i)) {
+        tocItems[i].classList.add('is-active');
+        b = false;
+      } else
+        tocItems[i].classList.remove('is-active');
+    }
+  }
+
+  var isTicking = null;
+  window.addEventListener('scroll', () => {
+    if (!isTicking) {
+      window.requestAnimationFrame(() => {
+        activateIfVisible();
+        isTicking = false;
+      });
+      isTicking = true;
+    }
+  }, false);
+</script>
+
+
+
+
+
+  
+  
+</body>
+
+</html>

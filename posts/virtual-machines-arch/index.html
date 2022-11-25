@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  <link href='&#x2F;icons&#x2F;site.webmanifest' rel="manifest" />
+  
+  
+  <link color="#5bbad5" href='&#x2F;icons&#x2F;safari-pinned-tab.svg' rel="mask-icon" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-16x16.png' rel="icon" sizes="16x16" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-32x32.png' rel="icon" sizes="32x32" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;apple-touch-icon.png' rel="apple-touch-icon" sizes="180x180" />
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" integrity="sha256-rTpdO0HXBCNpreAHcu6tB2Ppg515Vo+5GtYSsnNLz+8=" crossorigin="anonymous">
+  <link href="https://hegdeatri.com/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Atri Hegde | Virtual machines on linux using QEMU&#x2F;KVM and virt-manager
+
+  </title>
+
+  
+  
+  
+
+  
+</head>
+
+<body class="has-background-white" theme="light">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;hegdeatri.com">
+          <img src="&#x2F;images&#x2F;test-logo.png" alt="" style="max-height: 2.5rem !important; margin: 0.25rem;">
+
+          Atri Hegde</a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;">
+            Home
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;posts">
+            Posts
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;projects">
+            Projects
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;tags">
+            Tags
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;categories">
+            Categories
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;about">
+            About
+          </a>
+          
+          
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            Virtual machines on linux using QEMU&#x2F;KVM and virt-manager
+          </h1>
+          <p class="subtitle">A guide for Arch Linux</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Atri Hegde published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2022-06-27">June 27, 2022</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>2 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>214 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+              
+<p>
+  Categories:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/categories/post/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>Post</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/categories/linux/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>Linux</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+              
+<p>
+  Tags:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/tags/virtual-machines/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>Virtual Machines</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://hegdeatri.com/tags/arch-linux/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>Arch Linux</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <h1 id="install-qemu-kvm-and-virt-manager">Install QEMU/KVM and virt-manager</h1>
+<p>Installing all the packages we need.</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> pacman</span><span style="color:#eb6772;"> -S</span><span style="color:#abb2bf;"> qemu virt-manager archlinux-keyring virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables iptables libguestfs
+</span></code></pre>
+<p>Now lets start the KVM libvirt service</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> systemctl enable</span><span style="color:#eb6772;"> --now</span><span style="color:#abb2bf;"> libvirtd.service
+</span></code></pre>
+<p>Make sure libvirtd is running</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> systemctl status libvirtd.service
+</span></code></pre>
+<p>Now lets give permissions for our standard user to manage KVM.</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> vim /etc/libvirt/libvirtd.conf
+</span></code></pre>
+<p>Now uncomment <code>unix_sock_group = &quot;libvirt&quot;</code> and <code>unix_sock_rw_perms = &quot;0770&quot;</code>.
+Now add your user to the libvirt group and restart the libvirt service.</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> usermod</span><span style="color:#eb6772;"> -a -G</span><span style="color:#abb2bf;"> libvirt $(</span><span style="color:#eb6772;">whoami</span><span style="color:#abb2bf;">)
+</span><span style="color:#eb6772;">newgrp</span><span style="color:#abb2bf;"> libvirt
+</span><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> systemctl restart libvirtd.service
+</span></code></pre>
+<h2 id="enabling-nested-virtualization">Enabling Nested Virtualization</h2>
+<p>This allows you to run virtual machines inside virtual machines.</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="font-style:italic;color:#5f697a;"># Intel CPU
+</span><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> modprobe</span><span style="color:#eb6772;"> -r</span><span style="color:#abb2bf;"> kvm_intel
+</span><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> modprobe kvm_intel nested=1
+</span><span style="font-style:italic;color:#5f697a;"># AMD CPU
+</span><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> modprobe</span><span style="color:#eb6772;"> -r</span><span style="color:#abb2bf;"> kvm_amd
+</span><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> modprobe kvm_amd nested=1
+</span></code></pre>
+<p>To make this configuration persistant: </p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#5ebfcc;">echo </span><span style="color:#9acc76;">&quot;options kvm-intel nested=1&quot; </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">sudo</span><span style="color:#abb2bf;"> tee /etc/modprobe.d/kvm-intel.conf
+</span></code></pre>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="font-style:italic;color:#5f697a;"># Intel CPU
+</span><span style="color:#eb6772;">systool -m</span><span style="color:#abb2bf;"> kvm_intel</span><span style="color:#eb6772;"> -v </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">grep</span><span style="color:#abb2bf;"> nested
+</span><span style="color:#eb6772;">cat</span><span style="color:#abb2bf;"> /sys/module/kvm_intel/parameters/nested
+</span><span style="color:#abb2bf;">
+</span><span style="font-style:italic;color:#5f697a;"># AMD CPU
+</span><span style="color:#eb6772;">systool -m</span><span style="color:#abb2bf;"> kvm_amd</span><span style="color:#eb6772;"> -v </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">grep</span><span style="color:#abb2bf;"> nested
+</span><span style="color:#eb6772;">cat</span><span style="color:#abb2bf;"> /sys/module/kvm_amd/parameters/nested 
+</span></code></pre>
+<h2 id="common-issues">Common Issues</h2>
+<p>If your network <code>default</code> is not enabled run <code>sudo virsh net-start default</code></p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Now you can install your virtual machines using virt-manager</p>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head" >
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+          
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;posts&#x2F;neovim-guide&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              A neovim guide
+            </a>
+          </div>
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;hegdeatri.com&#x2F;posts&#x2F;first-website-tutorial&#x2F;">
+              Make your own website! ft. Zola<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+            
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p>
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+
+  
+  
+  
+  
+  <script src="https://hegdeatri.com/elasticlunr.min.js"></script>
+  <script src="https://hegdeatri.com/search_index.en.js"></script><script src="https://hegdeatri.com/js/site.js"></script>
+
+  
+
+
+
+
+
+  
+  
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 # The base URL of the site; the only required configuration variable.
-base_url = "https://old.hegdeatri.com"
+base_url = "https://zola.hegdeatri.com"
 
 # The site title and description; used in feeds by default.
 title = "Atri Hegde"
